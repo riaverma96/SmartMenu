@@ -1,0 +1,2025 @@
+{
+  "address": {
+    "apiKey": null,
+    "streetAddress": "",
+    "latitude": 33.7489954,
+    "longitude": -84.3879824,
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "",
+    "aptNumber": null
+  },
+  "restaurants": [
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e761805b0a3d982e6053d8",
+      "deliveryMin": 25,
+      "deliveryPrice": 4.99,
+      "logoUrl": "http://atlanta.foodtoyou.com/images/restaurant_images/Seven-Hens.jpg",
+      "name": "7 Hens",
+      "streetAddress": "2140 North Decatur Road",
+      "city": "Decatur",
+      "state": "GA",
+      "zip": "30033",
+      "foodTypes": [
+        "American (New)",
+        "Sandwiches",
+        "Salad"
+      ],
+      "phone": "(800) 951-3663",
+      "latitude": 33.7905444,
+      "longitude": -84.3049635,
+      "minFreeDelivery": 0,
+      "taxRate": 0.0775,
+      "acceptsCash": false,
+      "acceptsCard": true,
+      "offersPickup": false,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 60,
+      "maxWaitTime": 90,
+      "open": false,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/7-hens",
+      "hours": {
+        "Wednesday": [
+          "11:00 AM - 8:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e761805f2f9e661202a1ab",
+      "deliveryMin": 13,
+      "deliveryPrice": 0,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/aamar-indian-cuisine-31337_1435789176632.png",
+      "name": "Aamar Indian Cuisine",
+      "streetAddress": "100 Luckie Street",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30303",
+      "foodTypes": [
+        "Soup",
+        "Indian Food",
+        "Indian",
+        "Bangladeshi"
+      ],
+      "phone": "(404) 257-6959",
+      "latitude": 33.757309,
+      "longitude": -84.389911,
+      "minFreeDelivery": 0,
+      "taxRate": 0.0965,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/aamar-indian-cuisine",
+      "hours": {
+        "Monday": [
+          "4:00 PM - 11:00 PM"
+        ],
+        "Saturday": [
+          "1:00 PM - 11:00 PM"
+        ],
+        "Sunday": [
+          "1:00 PM - 11:00 PM"
+        ],
+        "Wednesday": [
+          "4:00 PM - 11:00 PM"
+        ],
+        "Friday": [
+          "5:00 PM - 11:00 PM"
+        ],
+        "Thursday": [
+          "4:00 PM - 11:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b165357bbaef9033f4c854c50c897353b1",
+      "deliveryMin": 10,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/baby-tommys-taste-of-new-york-9867_1396036892987.png",
+      "name": "Baby Tommy's Taste Of New York - Atlanta",
+      "streetAddress": "365 14th St NW",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30318",
+      "foodTypes": [
+        "Pizza",
+        "Italian Food",
+        "Italian"
+      ],
+      "phone": "(404) 874-4445",
+      "latitude": 33.786521,
+      "longitude": -84.399058,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": false,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 60,
+      "maxWaitTime": 75,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/baby-tommys-taste-of-new-york",
+      "hours": {
+        "Monday": [
+          "11:00 AM - 10:45 PM"
+        ],
+        "Saturday": [
+          "11:00 AM - 11:45 PM"
+        ],
+        "Sunday": [
+          "11:00 AM - 10:45 PM"
+        ],
+        "Wednesday": [
+          "11:00 AM - 10:45 PM"
+        ],
+        "Tuesday": [
+          "11:00 AM - 10:45 PM"
+        ],
+        "Friday": [
+          "11:00 AM - 11:45 PM"
+        ],
+        "Thursday": [
+          "11:00 AM - 10:45 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1884225aec137a02a9f14d8d7561637ff",
+      "deliveryMin": 15,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/baja-fresh-mexican-11677_1399492694434.png",
+      "name": "Baja Fresh Mexican",
+      "streetAddress": "250 Park Ave W Northwest",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30313",
+      "foodTypes": [
+        "Mexican Food",
+        "Mexican",
+        "Tex-Mex"
+      ],
+      "phone": "(404) 681-2252",
+      "latitude": 33.761616,
+      "longitude": -84.395097,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/baja-fresh-mexican",
+      "hours": {
+        "Monday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Saturday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Sunday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Wednesday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Tuesday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Friday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Thursday": [
+          "11:00 AM - 8:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1144247b91fbcb2f3cf1aebc8658dd313",
+      "deliveryMin": 15,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/bakaris-hot-pizza-cafe-28936_1426106768143.png",
+      "name": "Bakaris Hot Pizza Cafe",
+      "streetAddress": "576 Lee Street",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30310",
+      "foodTypes": [
+        "Halal",
+        "Pizza",
+        "Italian Food"
+      ],
+      "phone": "(404) 254-3784",
+      "latitude": 33.7392449,
+      "longitude": -84.413731,
+      "minFreeDelivery": 0,
+      "taxRate": 0,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/bakaris-hot-pizza-cafe",
+      "hours": {
+        "Monday": [
+          "3:00 PM - 10:00 PM"
+        ],
+        "Saturday": [
+          "3:00 PM - 10:00 PM"
+        ],
+        "Sunday": [
+          "5:00 PM - 10:00 PM"
+        ],
+        "Wednesday": [
+          "3:00 PM - 10:00 PM"
+        ],
+        "Tuesday": [
+          "3:00 PM - 10:00 PM"
+        ],
+        "Friday": [
+          "3:00 PM - 10:00 PM"
+        ],
+        "Thursday": [
+          "3:00 PM - 10:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1fe2bbabe6b94d9a62c4582e81e910454",
+      "deliveryMin": 12,
+      "deliveryPrice": 5,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/baraka-shawarma-8963_1394043335551.png",
+      "name": "Baraka Shawarma - Atlanta",
+      "streetAddress": "68 Walton St NW",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30303",
+      "foodTypes": [
+        "Mediterranean",
+        "Indian"
+      ],
+      "phone": "(404) 230-9232",
+      "latitude": 33.756386,
+      "longitude": -84.390883,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/baraka-shwarma",
+      "hours": {
+        "Monday": [
+          "11:00 AM - 10:00 PM"
+        ],
+        "Saturday": [
+          "11:00 AM - 11:00 PM"
+        ],
+        "Sunday": [
+          "11:00 AM - 11:00 PM"
+        ],
+        "Wednesday": [
+          "11:00 AM - 10:00 PM"
+        ],
+        "Tuesday": [
+          "11:00 AM - 10:00 PM"
+        ],
+        "Friday": [
+          "11:00 AM - 11:00 PM"
+        ],
+        "Thursday": [
+          "11:00 AM - 10:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1144247b91fbcb2f374d70f7938574b8f",
+      "deliveryMin": 35,
+      "deliveryPrice": 0,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/buenos-dias-cafe-23146_1411069521865.png",
+      "name": "Buenos Dias Cafe",
+      "streetAddress": "30 Decatur St SE",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30303",
+      "foodTypes": [
+        "Coffee & Tea",
+        "Dessert",
+        "Smoothies & Juices"
+      ],
+      "phone": "(404) 584-0444",
+      "latitude": 33.753829,
+      "longitude": -84.388695,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/buenos-dias-cafe",
+      "hours": {
+        "Monday": [
+          "7:00 AM - 4:30 PM"
+        ],
+        "Wednesday": [
+          "7:00 AM - 4:30 PM"
+        ],
+        "Tuesday": [
+          "7:00 AM - 4:30 PM"
+        ],
+        "Friday": [
+          "7:00 AM - 4:30 PM"
+        ],
+        "Thursday": [
+          "7:00 AM - 4:30 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1459c89af9c6802051e4dd64b2933de47",
+      "deliveryMin": 10,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/china-garden-at-ansley-ii-mall-40454_1492974055391.png",
+      "name": "China Garden At Ansley II Mall",
+      "streetAddress": "1579 Monroe Dr NE",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30324",
+      "foodTypes": [
+        "Chinese",
+        "American (Traditional)",
+        "American (New)",
+        "Soup"
+      ],
+      "phone": "(404) 892-6133",
+      "latitude": 33.79805,
+      "longitude": -84.369225,
+      "minFreeDelivery": 0,
+      "taxRate": 0.089,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/china-garden-at-ansley-2-mall",
+      "hours": {
+        "Monday": [
+          "11:00 AM - 10:30 PM"
+        ],
+        "Saturday": [
+          "11:30 AM - 11:00 PM"
+        ],
+        "Sunday": [
+          "5:00 PM - 10:30 PM"
+        ],
+        "Wednesday": [
+          "11:00 AM - 10:30 PM"
+        ],
+        "Tuesday": [
+          "11:00 AM - 10:30 PM"
+        ],
+        "Friday": [
+          "11:00 AM - 11:00 PM"
+        ],
+        "Thursday": [
+          "11:00 AM - 10:30 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e761806c37f85bbefd3fd2",
+      "deliveryMin": 10,
+      "deliveryPrice": 2.18,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/dawa-38987_1480966723458.png",
+      "name": "Dawa",
+      "streetAddress": "632 McDonald St SE",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30312",
+      "foodTypes": [
+        "Asian",
+        "Chinese",
+        "Japanese",
+        "Burgers"
+      ],
+      "phone": "(404) 230-8900",
+      "latitude": 33.746158,
+      "longitude": -84.366833,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/dawa",
+      "hours": {
+        "Saturday": [
+          "3:30 PM - 12:00 AM"
+        ],
+        "Sunday": [
+          "3:30 PM - 12:00 AM"
+        ],
+        "Wednesday": [
+          "3:30 PM - 12:00 AM"
+        ],
+        "Tuesday": [
+          "3:30 PM - 12:00 AM"
+        ],
+        "Friday": [
+          "3:30 PM - 12:00 AM"
+        ],
+        "Thursday": [
+          "3:30 PM - 12:00 AM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e761801c29932770d53a50",
+      "deliveryMin": 10,
+      "deliveryPrice": 2,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/east-of-chicago-37437_1469535701917.png",
+      "name": "East of Chicago",
+      "streetAddress": "349 Decatur St SE Ste E",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30312",
+      "foodTypes": [
+        "Pizza",
+        "Sports Bars"
+      ],
+      "phone": "(404) 500-2495",
+      "latitude": 33.74966,
+      "longitude": -84.378838,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/east-of-chicago",
+      "hours": {
+        "Monday": [
+          "11:00 AM - 9:00 PM"
+        ],
+        "Saturday": [
+          "11:00 AM - 9:00 PM"
+        ],
+        "Wednesday": [
+          "11:00 AM - 9:00 PM"
+        ],
+        "Tuesday": [
+          "11:00 AM - 9:00 PM"
+        ],
+        "Friday": [
+          "11:00 AM - 9:00 PM"
+        ],
+        "Thursday": [
+          "11:00 AM - 9:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e7618068b9fdda76dda513",
+      "logoUrl": "https://d3eygjmkm00b63.cloudfront.net/b3cd8215a4a2c08ca5ed7ecb206b7d13/banner.png",
+      "name": "Fresh To Order - CNN Center",
+      "streetAddress": "One CNN Center, Suite 220",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30303",
+      "foodTypes": [
+        "Salad",
+        "Breakfast & Brunch",
+        "Sandwiches"
+      ],
+      "phone": "(404) 390-1200",
+      "latitude": 33.755711,
+      "longitude": -84.3883717,
+      "minFreeDelivery": 0,
+      "taxRate": 0.089,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 30,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/fresh-to-order-cnn-center",
+      "hours": {},
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e7618052a711cf68f68703",
+      "logoUrl": "https://d3eygjmkm00b63.cloudfront.net/4190f4265ffe1da356705446f9cd8422/banner.png",
+      "name": "Fresh To Order - Midtown",
+      "streetAddress": "860 Peachtree St.",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30308",
+      "foodTypes": [
+        "Sandwiches",
+        "Salad",
+        "Soup"
+      ],
+      "phone": "(404) 593-2323",
+      "latitude": 33.7780997,
+      "longitude": -84.3843935,
+      "minFreeDelivery": 0,
+      "taxRate": 0.089,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 30,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/fresh-to-order-midtown",
+      "hours": {},
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1da325d7782b35bdb9eb0df4049d453f5",
+      "deliveryMin": 10,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/get-fruity-cafe-7973_1390935068814.png",
+      "name": "Get Fruity Cafe",
+      "streetAddress": "79 Marietta St",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30009",
+      "foodTypes": [
+        "Subs & Sandwiches",
+        "Healthy Food",
+        "Smoothies & Juices",
+        "American Food",
+        "Juice Bars & Smoothies",
+        "Salad",
+        "Sandwiches",
+        "Wraps"
+      ],
+      "phone": "(404) 521-0109",
+      "latitude": 33.756452,
+      "longitude": -84.391679,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/get-fruity-cafe",
+      "hours": {
+        "Monday": [
+          "8:00 AM - 5:00 PM"
+        ],
+        "Saturday": [
+          "9:00 AM - 3:00 PM"
+        ],
+        "Wednesday": [
+          "8:00 AM - 5:00 PM"
+        ],
+        "Tuesday": [
+          "8:00 AM - 5:00 PM"
+        ],
+        "Friday": [
+          "8:00 AM - 5:00 PM"
+        ],
+        "Thursday": [
+          "8:00 AM - 5:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e76180a80fc94d0f74aa84",
+      "deliveryMin": 20,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/go-vindas-cafe-33270_1444846520022.png",
+      "name": "Go Vindas Cafe",
+      "streetAddress": "1146 Euclid Ave NE Ste A",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30307",
+      "foodTypes": [
+        "Vegan",
+        "Vegetarian",
+        "Subs & Sandwiches"
+      ],
+      "phone": "(404) 907-4387",
+      "latitude": 33.765007,
+      "longitude": -84.34997,
+      "minFreeDelivery": 0,
+      "taxRate": 0.07,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/go-vindas-cafe",
+      "hours": {
+        "Monday": [
+          "5:00 PM - 10:00 PM"
+        ],
+        "Saturday": [
+          "5:00 PM - 10:00 PM"
+        ],
+        "Sunday": [
+          "5:00 PM - 9:00 PM"
+        ],
+        "Wednesday": [
+          "5:00 PM - 10:00 PM"
+        ],
+        "Tuesday": [
+          "5:00 PM - 10:00 PM"
+        ],
+        "Friday": [
+          "5:00 PM - 10:00 PM"
+        ],
+        "Thursday": [
+          "5:00 PM - 10:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1459c89af9c6802050a8ddae27672f85b",
+      "deliveryMin": 9,
+      "deliveryPrice": 1.95,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/gopuff-atlanta-40535_1493774010289.png",
+      "name": "GoPuff - Atlanta",
+      "streetAddress": "515 Means Street",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30318",
+      "foodTypes": [
+        "Grocery",
+        "Market"
+      ],
+      "phone": "(855) 400-7833",
+      "latitude": 33.77276,
+      "longitude": -84.404115,
+      "minFreeDelivery": 0,
+      "taxRate": 0.089,
+      "acceptsCash": false,
+      "acceptsCard": true,
+      "offersPickup": false,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/gopuff-atlanta",
+      "hours": {
+        "Monday": [
+          "12:00 PM - 4:20 AM"
+        ],
+        "Saturday": [
+          "12:00 PM - 4:20 AM"
+        ],
+        "Sunday": [
+          "12:00 PM - 4:20 AM"
+        ],
+        "Wednesday": [
+          "12:00 PM - 4:20 AM"
+        ],
+        "Tuesday": [
+          "12:00 PM - 4:20 AM"
+        ],
+        "Friday": [
+          "12:00 PM - 4:20 AM"
+        ],
+        "Thursday": [
+          "12:00 PM - 4:20 AM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1884225aec137a02a6cab4bd782b86e0e",
+      "deliveryMin": 8,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/goodfella-pizza-16195_1402342893775.png",
+      "name": "Goodfella Pizza",
+      "streetAddress": "615 Spring St NW",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30308",
+      "foodTypes": [
+        "Wings",
+        "Pizza",
+        "Italian Food",
+        "Chicken Wings",
+        "Italian"
+      ],
+      "phone": "(404) 347-7227",
+      "latitude": 33.771442,
+      "longitude": -84.388561,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/goodfella-pizza",
+      "hours": {
+        "Monday": [
+          "10:30 AM - 2:30 AM"
+        ],
+        "Saturday": [
+          "10:30 AM - 3:30 AM"
+        ],
+        "Sunday": [
+          "11:00 AM - 1:30 AM"
+        ],
+        "Wednesday": [
+          "10:30 AM - 2:30 AM"
+        ],
+        "Tuesday": [
+          "10:30 AM - 2:30 AM"
+        ],
+        "Friday": [
+          "10:30 AM - 3:30 AM"
+        ],
+        "Thursday": [
+          "10:30 AM - 2:30 AM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e76180364df0b435c10d39",
+      "deliveryMin": 10,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/EatStreet_Logo_Mark_Color_RGB.svg",
+      "name": "Kemper's Cafe Caribbean Cuisine - Metropolitan Pkwy.",
+      "streetAddress": "1955 Metropolitan Pkwy",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30315",
+      "foodTypes": [
+        "Vegetarian",
+        "Jamaican Food",
+        "Southern Food",
+        "Healthy Food",
+        "Caribbean Food",
+        "American Food",
+        "Caribbean",
+        "Soul Food"
+      ],
+      "phone": "(404) 464-8927",
+      "latitude": 33.701577,
+      "longitude": -84.408469,
+      "minFreeDelivery": 0,
+      "taxRate": 0.07,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/kempers-cafe-caribbean-cuisine",
+      "hours": {
+        "Monday": [
+          "10:30 AM - 8:30 PM"
+        ],
+        "Saturday": [
+          "10:30 AM - 8:30 PM"
+        ],
+        "Wednesday": [
+          "10:30 AM - 8:30 PM"
+        ],
+        "Tuesday": [
+          "10:30 AM - 8:30 PM"
+        ],
+        "Friday": [
+          "10:30 AM - 8:30 PM"
+        ],
+        "Thursday": [
+          "10:30 AM - 8:30 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1fe2bbabe6b94d9a6c26612a87a5525ba",
+      "deliveryMin": 10,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/kimis-bistro-8037_1391040184858.png",
+      "name": "Kimi's Bistro",
+      "streetAddress": "1126 Euclid Ave NE",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30307",
+      "foodTypes": [
+        "Subs & Sandwiches",
+        "Ethiopian Food",
+        "Breakfast",
+        "Breakfast & Brunch",
+        "Sandwiches",
+        "Ethiopian"
+      ],
+      "phone": "(404) 254-4001",
+      "latitude": 33.764552,
+      "longitude": -84.350533,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/kimis-bistro",
+      "hours": {
+        "Monday": [
+          "10:00 AM - 9:00 PM"
+        ],
+        "Saturday": [
+          "10:00 AM - 10:00 PM"
+        ],
+        "Sunday": [
+          "10:00 AM - 9:00 PM"
+        ],
+        "Wednesday": [
+          "10:00 AM - 10:00 PM"
+        ],
+        "Friday": [
+          "10:00 AM - 10:00 PM"
+        ],
+        "Thursday": [
+          "10:00 AM - 10:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1144247b91fbcb2f3a89b33ecfc082c34",
+      "deliveryMin": 10,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/lucky-buddha-23418_1411397414479.png",
+      "name": "Lucky Buddha",
+      "streetAddress": "529 10th Street NW",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30318",
+      "foodTypes": [
+        "Chinese Food",
+        "Vietnamese Food",
+        "Thai Food"
+      ],
+      "phone": "(404) 885-1518",
+      "latitude": 33.7817629,
+      "longitude": -84.4047643,
+      "minFreeDelivery": 0,
+      "taxRate": 0.09,
+      "acceptsCash": false,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/lucky-buddha",
+      "hours": {
+        "Monday": [
+          "11:30 AM - 2:45 AM"
+        ],
+        "Saturday": [
+          "12:00 PM - 3:50 AM"
+        ],
+        "Sunday": [
+          "12:00 PM - 1:45 AM"
+        ],
+        "Wednesday": [
+          "11:30 AM - 2:45 AM"
+        ],
+        "Tuesday": [
+          "11:30 AM - 2:45 AM"
+        ],
+        "Friday": [
+          "12:00 PM - 3:50 AM"
+        ],
+        "Thursday": [
+          "11:30 AM - 2:45 AM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1884225aec137a02ac44bf63a190867dd",
+      "deliveryMin": 10,
+      "deliveryPrice": 2.99,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/mama-mia-pizza-and-wings-16193_1402341862695.png",
+      "name": "Mama Mia Pizza & Wings",
+      "streetAddress": "78 Broad St.",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30901",
+      "foodTypes": [
+        "Wings",
+        "Pizza",
+        "Chicken Wings"
+      ],
+      "phone": "(404) 221-9296",
+      "latitude": 33.7524241,
+      "longitude": -84.3928071,
+      "minFreeDelivery": 0,
+      "taxRate": 0.089,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/mama-mia-pizza-and-wings",
+      "hours": {
+        "Monday": [
+          "4:00 PM - 9:45 PM"
+        ],
+        "Saturday": [
+          "4:00 PM - 9:45 PM"
+        ],
+        "Sunday": [
+          "4:00 PM - 9:45 PM"
+        ],
+        "Wednesday": [
+          "4:00 PM - 9:45 PM"
+        ],
+        "Tuesday": [
+          "4:00 PM - 9:45 PM"
+        ],
+        "Friday": [
+          "4:00 PM - 9:45 PM"
+        ],
+        "Thursday": [
+          "4:00 PM - 9:45 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b165357bbaef9033f420250f4edee899e9",
+      "deliveryMin": 20,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/mama-nikis-pizza-9564_1396278056254.png",
+      "name": "Mama Niki's Pizza",
+      "streetAddress": "1715 Howell Mill Rd NW",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30318",
+      "foodTypes": [
+        "Subs & Sandwiches",
+        "Pizza",
+        "Sandwiches"
+      ],
+      "phone": "(404) 350-0514",
+      "latitude": 33.80123,
+      "longitude": -84.413055,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/mama-nikis-pizza",
+      "hours": {
+        "Monday": [
+          "11:00 AM - 2:00 PM",
+          "6:00 PM - 9:50 PM"
+        ],
+        "Saturday": [
+          "6:00 PM - 9:50 PM"
+        ],
+        "Sunday": [
+          "5:00 PM - 9:50 PM"
+        ],
+        "Wednesday": [
+          "11:00 AM - 2:00 PM",
+          "6:00 PM - 9:50 PM"
+        ],
+        "Tuesday": [
+          "11:00 AM - 2:00 PM",
+          "6:00 PM - 9:50 PM"
+        ],
+        "Friday": [
+          "11:00 AM - 2:00 PM",
+          "6:00 PM - 9:50 PM"
+        ],
+        "Thursday": [
+          "11:00 AM - 2:00 PM",
+          "6:00 PM - 9:50 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1144247b91fbcb2f3e0380ba67be99e01",
+      "deliveryMin": 20,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/EatStreet_Logo_Mark_Color_RGB.svg",
+      "name": "Mediterranean Grill Midtown",
+      "streetAddress": "985 Monroe Dr NE, Ste F",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30308",
+      "foodTypes": [
+        "Greek Food",
+        "Middle Eastern Food",
+        "Mediterranean Food"
+      ],
+      "phone": "(404) 917-1100",
+      "latitude": 33.7811519,
+      "longitude": -84.3686048,
+      "minFreeDelivery": 0,
+      "taxRate": 0.055,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/mediterranean-grill-midtown",
+      "hours": {
+        "Monday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Saturday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Sunday": [
+          "11:00 AM - 7:30 PM"
+        ],
+        "Wednesday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Tuesday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Friday": [
+          "11:00 AM - 8:00 PM"
+        ],
+        "Thursday": [
+          "11:00 AM - 8:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1459c89af9c6802053fa91c86e29b5a37",
+      "deliveryMin": 15,
+      "deliveryPrice": 6.99,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/monsoon-masala-kitchen-40713_1496104365833.png",
+      "name": "Monsoon Masala Kitchen",
+      "streetAddress": "3979 Buford Hwy NE Suite 103",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30345",
+      "foodTypes": [
+        "Middle Eastern",
+        "Indian",
+        "Halal",
+        "Bangladeshi"
+      ],
+      "phone": "(404) 228-0017",
+      "latitude": 33.858655,
+      "longitude": -84.309175,
+      "minFreeDelivery": 0,
+      "taxRate": 0.07,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/monsoon-masala-kitchen",
+      "hours": {
+        "Monday": [
+          "11:30 AM - 3:00 PM",
+          "5:30 PM - 10:30 PM"
+        ],
+        "Saturday": [
+          "12:00 PM - 10:45 PM"
+        ],
+        "Sunday": [
+          "12:00 PM - 10:45 PM"
+        ],
+        "Wednesday": [
+          "11:30 AM - 3:00 PM",
+          "5:30 PM - 10:30 PM"
+        ],
+        "Tuesday": [
+          "11:30 AM - 3:00 PM",
+          "5:30 PM - 10:30 PM"
+        ],
+        "Friday": [
+          "11:30 AM - 3:00 PM",
+          "5:30 PM - 10:30 PM"
+        ],
+        "Thursday": [
+          "11:30 AM - 3:00 PM",
+          "5:30 PM - 10:30 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1144247b91fbcb2f3bb77b07695b3c9d0",
+      "deliveryMin": 12,
+      "deliveryPrice": 3,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/nancys-pizza-28935_1426106661967.png",
+      "name": "Nancy's Pizza",
+      "streetAddress": "265 Ponce De Leon",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30308",
+      "foodTypes": [
+        "Pizza"
+      ],
+      "phone": "(404) 881-0111",
+      "latitude": 33.7722863,
+      "longitude": -84.378822,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 50,
+      "maxWaitTime": 70,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/nancys-pizza-atlanta",
+      "hours": {
+        "Monday": [
+          "10:00 AM - 10:45 PM"
+        ],
+        "Saturday": [
+          "11:00 AM - 12:45 AM"
+        ],
+        "Sunday": [
+          "12:00 PM - 9:45 PM"
+        ],
+        "Wednesday": [
+          "10:00 AM - 10:45 PM"
+        ],
+        "Tuesday": [
+          "10:00 AM - 10:45 PM"
+        ],
+        "Friday": [
+          "10:00 AM - 12:45 AM"
+        ],
+        "Thursday": [
+          "10:00 AM - 10:45 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1884225aec137a02aa7d9b968abbb3711",
+      "deliveryMin": 20,
+      "deliveryPrice": 4,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/niramish-indian-11761_1399503390661.png",
+      "name": "Niramish Indian Cuisine",
+      "streetAddress": "1138 Euclid Ave NE",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30307",
+      "foodTypes": [
+        "Indian Food",
+        "Indian"
+      ],
+      "phone": "(404) 917-0106",
+      "latitude": 33.764882,
+      "longitude": -84.350161,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 60,
+      "maxWaitTime": 75,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/niramish-indian-cuisine-atlanta",
+      "hours": {
+        "Monday": [
+          "2:30 PM - 11:00 PM"
+        ],
+        "Saturday": [
+          "12:30 PM - 11:00 PM"
+        ],
+        "Sunday": [
+          "12:30 PM - 11:00 PM"
+        ],
+        "Tuesday": [
+          "2:30 PM - 11:00 PM"
+        ],
+        "Friday": [
+          "4:30 PM - 11:00 PM"
+        ],
+        "Thursday": [
+          "2:30 PM - 11:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e761800f3abae48281fbc3",
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/pita-pit-34951_1451340951918.png",
+      "name": "Pita Pit",
+      "streetAddress": "950 West Peachtree Street",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30309",
+      "foodTypes": [
+        "Subs & Sandwiches",
+        "Vegetarian",
+        "Mediterranean Food",
+        "Sandwiches",
+        "Mediterranean",
+        "Fast Food"
+      ],
+      "phone": "(470) 225-6276",
+      "latitude": 33.78011,
+      "longitude": -84.387566,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/pita-pit-atlanta",
+      "hours": {
+        "Monday": [
+          "10:00 AM - 10:00 PM"
+        ],
+        "Saturday": [
+          "10:00 AM - 12:00 AM"
+        ],
+        "Sunday": [
+          "10:00 AM - 9:00 PM"
+        ],
+        "Wednesday": [
+          "10:00 AM - 10:00 PM"
+        ],
+        "Tuesday": [
+          "10:00 AM - 10:00 PM"
+        ],
+        "Friday": [
+          "10:00 AM - 3:00 AM"
+        ],
+        "Thursday": [
+          "10:00 AM - 10:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1884225aec137a02ad1d54516213c7a49",
+      "deliveryMin": 20,
+      "deliveryPrice": 2,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/planet-bombay-10046_1396473956663.png",
+      "name": "Planet Bombay",
+      "streetAddress": "451 Moreland Ave NE",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30307",
+      "foodTypes": [
+        "Indian Food",
+        "Indian",
+        "Halal",
+        "Food"
+      ],
+      "phone": "(404) 688-0005",
+      "latitude": 33.766672,
+      "longitude": -84.348707,
+      "minFreeDelivery": 0,
+      "taxRate": 0.0965,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/planet-bombay",
+      "hours": {
+        "Monday": [
+          "11:30 AM - 2:45 PM",
+          "5:30 PM - 10:45 PM"
+        ],
+        "Saturday": [
+          "1:00 PM - 10:45 PM"
+        ],
+        "Sunday": [
+          "1:00 PM - 10:45 PM"
+        ],
+        "Wednesday": [
+          "11:30 AM - 2:45 PM",
+          "5:30 PM - 10:45 PM"
+        ],
+        "Tuesday": [
+          "11:30 AM - 2:45 PM",
+          "5:30 PM - 10:45 PM"
+        ],
+        "Friday": [
+          "11:30 AM - 2:45 PM",
+          "5:30 PM - 10:45 PM"
+        ],
+        "Thursday": [
+          "11:30 AM - 2:45 PM",
+          "5:30 PM - 10:45 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e761809e25c6fa765494d1",
+      "deliveryMin": 20,
+      "deliveryPrice": 0,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/poco-pomodoro-32044_1438115323180.png",
+      "name": "Poco Pomodoro",
+      "streetAddress": "477 Flat Shoals Ave SE",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30316",
+      "foodTypes": [
+        "Italian Food",
+        "",
+        "Italian"
+      ],
+      "phone": "(404) 625-1849",
+      "latitude": 33.7409143,
+      "longitude": -84.3466018,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/poco-pomodoro",
+      "hours": {
+        "Monday": [
+          "5:30 PM - 9:00 PM"
+        ],
+        "Saturday": [
+          "5:30 PM - 9:00 PM"
+        ],
+        "Wednesday": [
+          "5:30 PM - 9:00 PM"
+        ],
+        "Tuesday": [
+          "5:30 PM - 9:00 PM"
+        ],
+        "Friday": [
+          "5:30 PM - 9:00 PM"
+        ],
+        "Thursday": [
+          "5:30 PM - 9:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e76180014ccd68f4aa70cf",
+      "deliveryMin": 10,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/roccos-new-york-pizza-35332_1453843858981.png",
+      "name": "Rocco's New York Pizza",
+      "streetAddress": "730 Barnett St NE",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30306",
+      "foodTypes": [
+        "Pizza"
+      ],
+      "phone": "(404) 343-1435",
+      "latitude": 33.774431,
+      "longitude": -84.359016,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/roccos-new-york-pizza",
+      "hours": {},
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e761807053236f95b50b9d",
+      "deliveryMin": 10,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/roccos-new-york-pizza-2-37425_1469536555630.png",
+      "name": "Rocco's New York Pizza 2",
+      "streetAddress": "730 Barnett Drive",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30306",
+      "foodTypes": [
+        "Pizza",
+        "Italian Food",
+        "Italian"
+      ],
+      "phone": "(404) 500-3676",
+      "latitude": 33.77443090000001,
+      "longitude": -84.3590162,
+      "minFreeDelivery": 0,
+      "taxRate": 0.07,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/roccos-new-york-pizza-2",
+      "hours": {
+        "Saturday": [
+          "5:00 PM - 3:00 AM"
+        ],
+        "Sunday": [
+          "5:00 PM - 1:00 AM"
+        ],
+        "Wednesday": [
+          "5:00 PM - 1:00 AM"
+        ],
+        "Tuesday": [
+          "5:00 PM - 1:00 AM"
+        ],
+        "Friday": [
+          "5:00 PM - 3:00 AM"
+        ],
+        "Thursday": [
+          "5:00 PM - 1:00 AM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e7618078fc780c4b556fce",
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/ru-sans-midtown-sushi-and-seafood-34969_1451513824468.png",
+      "name": "Ru San's Midtown Sushi & Seafood",
+      "streetAddress": "1529 Piedmont Ave NW",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30324",
+      "foodTypes": [
+        "Seafood",
+        "Japanese Food",
+        "Sushi",
+        "Sushi Bars",
+        "Japanese"
+      ],
+      "phone": "(404) 875-7042",
+      "latitude": 33.795646,
+      "longitude": -84.368906,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/ru-sans-midtown-sushi-and-seafood",
+      "hours": {
+        "Monday": [
+          "11:30 AM - 11:00 PM"
+        ],
+        "Saturday": [
+          "11:30 AM - 12:00 AM"
+        ],
+        "Sunday": [
+          "11:30 AM - 10:00 PM"
+        ],
+        "Wednesday": [
+          "11:30 AM - 11:00 PM"
+        ],
+        "Tuesday": [
+          "11:30 AM - 11:00 PM"
+        ],
+        "Friday": [
+          "11:30 AM - 12:00 AM"
+        ],
+        "Thursday": [
+          "11:30 AM - 11:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1884225aec137a02a106bd9309e41674b",
+      "deliveryMin": 12,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/satto-thai-and-sushi-bar-10297_1396630542064.png",
+      "name": "Satto Thai & Sushi Bar",
+      "streetAddress": "768 Marietta St NW",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30318",
+      "foodTypes": [
+        "Sushi",
+        "Thai Food",
+        "Sushi Bars",
+        "Thai",
+        "Soup"
+      ],
+      "phone": "(404) 681-1133",
+      "latitude": 33.773235,
+      "longitude": -84.404017,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": false,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/satto-thai-and-sushi",
+      "hours": {
+        "Monday": [
+          "11:30 AM - 9:45 PM"
+        ],
+        "Saturday": [
+          "5:00 PM - 9:45 PM"
+        ],
+        "Sunday": [
+          "5:00 PM - 9:45 PM"
+        ],
+        "Wednesday": [
+          "11:30 AM - 9:45 PM"
+        ],
+        "Tuesday": [
+          "11:30 AM - 9:45 PM"
+        ],
+        "Friday": [
+          "11:30 AM - 9:45 PM"
+        ],
+        "Thursday": [
+          "11:30 AM - 9:45 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1fe2bbabe6b94d9a619de03addcc16659",
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/slice-downtown-8036_1391039964479.png",
+      "name": "Slice Downtown",
+      "streetAddress": "85 Poplar St NW",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30303",
+      "foodTypes": [
+        "Pizza",
+        "Italian Food",
+        "Lounges"
+      ],
+      "phone": "(404) 917-1820",
+      "latitude": 33.756911,
+      "longitude": -84.390028,
+      "minFreeDelivery": 0,
+      "taxRate": 0.09,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/slice-downtown",
+      "hours": {
+        "Monday": [
+          "11:30 AM - 10:00 PM"
+        ],
+        "Saturday": [
+          "4:00 PM - 10:00 PM"
+        ],
+        "Wednesday": [
+          "11:30 AM - 10:00 PM"
+        ],
+        "Tuesday": [
+          "11:30 AM - 10:00 PM"
+        ],
+        "Friday": [
+          "11:30 AM - 10:00 PM"
+        ],
+        "Thursday": [
+          "11:30 AM - 10:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e761805abf05b4d7ce69fb",
+      "deliveryMin": 1,
+      "deliveryPrice": 1,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/street-eating-madison-358_1443198279227.png",
+      "name": "Street Eating Atlanta",
+      "streetAddress": "316 West Washington Avenue",
+      "city": "Madison",
+      "state": "WI",
+      "zip": "53703",
+      "foodTypes": [
+        "american"
+      ],
+      "phone": "(608) 535-1051",
+      "latitude": 33.748995,
+      "longitude": -84.387982,
+      "minFreeDelivery": -1,
+      "taxRate": 0.001,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": true,
+      "minWaitTime": 35,
+      "maxWaitTime": 50,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/test-restaurant-105",
+      "hours": {
+        "Monday": [
+          "12:00 AM - 12:00 AM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1884225aec137a02adcab551ff64209de",
+      "deliveryMin": 15,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/thai-5-and-sushi-bar-12372_1400621897731.png",
+      "name": "Thai 5 and Sushi Bar",
+      "streetAddress": "1148 Euclid Ave NE",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30307",
+      "foodTypes": [
+        "Japanese Food",
+        "Sushi",
+        "Thai Food",
+        "Japanese",
+        "Thai",
+        "Sushi Bars"
+      ],
+      "phone": "(404) 521-3555",
+      "latitude": 33.765021,
+      "longitude": -84.34993,
+      "minFreeDelivery": 0,
+      "taxRate": 0.089,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/thai-5-and-sushi-bar",
+      "hours": {
+        "Monday": [
+          "11:30 AM - 3:00 PM",
+          "4:30 PM - 10:00 PM"
+        ],
+        "Saturday": [
+          "12:00 PM - 11:00 PM"
+        ],
+        "Sunday": [
+          "12:00 PM - 10:00 PM"
+        ],
+        "Wednesday": [
+          "11:30 AM - 3:00 PM",
+          "4:30 PM - 10:00 PM"
+        ],
+        "Tuesday": [
+          "11:30 AM - 3:00 PM",
+          "4:30 PM - 10:00 PM"
+        ],
+        "Friday": [
+          "11:30 AM - 3:00 PM",
+          "4:30 PM - 10:15 PM"
+        ],
+        "Thursday": [
+          "11:30 AM - 3:00 PM",
+          "4:30 PM - 10:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e76180a641a4888179cfb4",
+      "deliveryMin": 15,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/the-pantry-37027_1465478411026.png",
+      "name": "The Pantry",
+      "streetAddress": "242 Auburn Ave NE",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30303",
+      "foodTypes": [
+        "Subs & Sandwiches",
+        "Healthy Food",
+        "Breakfast",
+        "Sandwiches",
+        "Salad",
+        "Juice Bars & Smoothies"
+      ],
+      "phone": "(470) 225-7362",
+      "latitude": 33.7556682,
+      "longitude": -84.3797362,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": false,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/the-pantry",
+      "hours": {
+        "Saturday": [
+          "11:00 AM - 4:00 PM"
+        ],
+        "Wednesday": [
+          "11:00 AM - 4:00 PM"
+        ],
+        "Tuesday": [
+          "11:00 AM - 4:00 PM"
+        ],
+        "Friday": [
+          "11:00 AM - 4:00 PM"
+        ],
+        "Thursday": [
+          "11:00 AM - 4:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1144247b91fbcb2f37cec6df27b51f626",
+      "deliveryMin": 15,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/top-spice-23604_1411676699015.png",
+      "name": "Top Spice",
+      "streetAddress": "1529-F Piedmont Ave",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30324",
+      "foodTypes": [
+        "Thai",
+        "Malaysian"
+      ],
+      "phone": "(404) 685-9336",
+      "latitude": 33.795747,
+      "longitude": -84.36873,
+      "minFreeDelivery": 0,
+      "taxRate": 0.085,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 60,
+      "maxWaitTime": 75,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/top-spice",
+      "hours": {
+        "Monday": [
+          "11:00 AM - 3:00 PM",
+          "5:00 PM - 10:00 PM"
+        ],
+        "Saturday": [
+          "11:00 AM - 3:00 PM",
+          "5:00 PM - 10:30 PM"
+        ],
+        "Sunday": [
+          "5:00 PM - 10:00 PM"
+        ],
+        "Wednesday": [
+          "11:00 AM - 3:00 PM",
+          "5:00 PM - 10:00 PM"
+        ],
+        "Tuesday": [
+          "11:00 AM - 3:00 PM",
+          "5:00 PM - 10:00 PM"
+        ],
+        "Friday": [
+          "11:00 AM - 3:00 PM",
+          "5:00 PM - 10:30 PM"
+        ],
+        "Thursday": [
+          "11:00 AM - 3:00 PM",
+          "5:00 PM - 10:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1144247b91fbcb2f3c429abd4f803e2e8",
+      "deliveryMin": 15,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/EatStreet_Logo_Mark_Color_RGB.svg",
+      "name": "Urban Pie",
+      "streetAddress": "2012 Hosea Williams Drive",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30317",
+      "foodTypes": [
+        "Pizza"
+      ],
+      "phone": "(404) 373-2778",
+      "latitude": 33.751434,
+      "longitude": -84.321917,
+      "minFreeDelivery": 0,
+      "taxRate": 0.07,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/urban-pie",
+      "hours": {
+        "Monday": [
+          "3:00 PM - 10:00 PM"
+        ],
+        "Saturday": [
+          "11:30 AM - 11:00 PM"
+        ],
+        "Sunday": [
+          "11:30 AM - 10:00 PM"
+        ],
+        "Wednesday": [
+          "3:00 PM - 10:00 PM"
+        ],
+        "Tuesday": [
+          "3:00 PM - 10:00 PM"
+        ],
+        "Friday": [
+          "11:30 AM - 11:00 PM"
+        ],
+        "Thursday": [
+          "3:00 PM - 10:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1f15b4f2e73e7618015ac886c8897bb3e",
+      "deliveryMin": 15,
+      "deliveryPrice": 4.99,
+      "logoUrl": "http://atlanta.foodtoyou.com/images/restaurant_images/Which-Which.jpg",
+      "name": "Which Wich",
+      "streetAddress": "265 18th Street Northwest",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30363",
+      "foodTypes": [
+        "Sandwiches"
+      ],
+      "phone": "(800) 951-3663",
+      "latitude": 33.792713,
+      "longitude": -84.39708279999999,
+      "minFreeDelivery": 0,
+      "taxRate": 0.0775,
+      "acceptsCash": false,
+      "acceptsCard": true,
+      "offersPickup": false,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 60,
+      "maxWaitTime": 90,
+      "open": false,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/which-wich-atlanta",
+      "hours": {
+        "Wednesday": [
+          "11:00 AM - 8:00 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    },
+    {
+      "apiKey": "90fd4587554469b1144247b91fbcb2f35a586ffb6cbe0d6f",
+      "deliveryMin": 10,
+      "logoUrl": "https://eatstreet-static.s3.amazonaws.com/assets/images/restaurant_logos/wingnuts-23417_1411395502322.png",
+      "name": "Wingnuts - Marietta St. NW",
+      "streetAddress": "768 Marietta St NW",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30318",
+      "foodTypes": [
+        "Subs & Sandwiches",
+        "Wings"
+      ],
+      "phone": "(678) 702-9990",
+      "latitude": 33.7732927,
+      "longitude": -84.4039598,
+      "minFreeDelivery": 0,
+      "taxRate": 0.08,
+      "acceptsCash": true,
+      "acceptsCard": true,
+      "offersPickup": true,
+      "offersDelivery": true,
+      "isTestRestaurant": false,
+      "minWaitTime": 45,
+      "maxWaitTime": 60,
+      "open": true,
+      "url": "https://eatstreet.com/atlanta-ga/restaurants/wingnuts",
+      "hours": {
+        "Monday": [
+          "11:00 AM - 10:30 PM"
+        ],
+        "Saturday": [
+          "12:00 PM - 10:30 PM"
+        ],
+        "Sunday": [
+          "12:00 PM - 10:30 PM"
+        ],
+        "Wednesday": [
+          "11:00 AM - 10:30 PM"
+        ],
+        "Tuesday": [
+          "11:00 AM - 10:30 PM"
+        ],
+        "Friday": [
+          "11:00 AM - 10:30 PM"
+        ],
+        "Thursday": [
+          "11:00 AM - 10:30 PM"
+        ]
+      },
+      "timezone": "US/Eastern"
+    }
+  ]
+}
