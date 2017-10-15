@@ -234,16 +234,16 @@
             </objects>
             <point key="canvasLocation" x="873" y="497"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="SKk-v6-hoX">
             <objects>
-                <viewController id="1fe-WY-JrL" sceneMemberID="viewController">
+                <viewController id="1fe-WY-JrL" customClass="MapViewController" customModule="SmartMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oha-5M-n5H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSo-L2-7IQ">
-                                <rect key="frame" x="16" y="281" width="249" height="30"/>
+                                <rect key="frame" x="63" y="597" width="249" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Confirm Restaurant"/>
@@ -251,14 +251,21 @@
                                     <segue destination="3s1-FS-E0J" kind="show" id="toy-Ka-DT3"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vld-GS-xD5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="SY6-4g-Gp4"/>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="vld-GS-xD5" id="g06-y9-VVH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVg-lO-gDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872.79999999999995" y="1371.3643178410796"/>
+            <point key="canvasLocation" x="872.79999999999995" y="1284.1079460269866"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="A8S-2q-uWG">
