@@ -5,7 +5,6 @@
 //  Created by Ria Verma on 10/15/17.
 //  Copyright © 2017 Hex. All rights reserved.
 //
-
 import MapKit
 
 class RestaurantPin : NSObject, MKAnnotation {

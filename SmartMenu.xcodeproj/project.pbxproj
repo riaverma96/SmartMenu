@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FB63F7221F9403130016945A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63F7211F9403130016945A /* MapViewController.swift */; };
+		FBCEF99B1F943F7500AE0DBD /* RestaurantPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCEF99A1F943F7500AE0DBD /* RestaurantPin.swift */; };
+		FBCEF99D1F94411400AE0DBD /* all_atlanta_restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = FBCEF99C1F94410200AE0DBD /* all_atlanta_restaurants.json */; };
+		FBCEF99E1F94411500AE0DBD /* all_atlanta_restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = FBCEF99C1F94410200AE0DBD /* all_atlanta_restaurants.json */; };
+		FBCEF99F1F94411500AE0DBD /* all_atlanta_restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = FBCEF99C1F94410200AE0DBD /* all_atlanta_restaurants.json */; };
 		FBEA46AB1F7F270900049BA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEA46AA1F7F270900049BA2 /* AppDelegate.swift */; };
 		FBEA46AD1F7F270900049BA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEA46AC1F7F270900049BA2 /* ViewController.swift */; };
 		FBEA46B01F7F270900049BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEA46AE1F7F270900049BA2 /* Main.storyboard */; };
@@ -36,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		FB63F7211F9403130016945A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FBCEF99A1F943F7500AE0DBD /* RestaurantPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPin.swift; sourceTree = "<group>"; };
+		FBCEF99C1F94410200AE0DBD /* all_atlanta_restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = all_atlanta_restaurants.json; sourceTree = "<group>"; };
 		FBEA46A71F7F270900049BA2 /* SmartMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEA46AA1F7F270900049BA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBEA46AC1F7F270900049BA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 		FBEA46A91F7F270900049BA2 /* SmartMenu */ = {
 			isa = PBXGroup;
 			children = (
+				FBCEF99C1F94410200AE0DBD /* all_atlanta_restaurants.json */,
 				FBEA46AA1F7F270900049BA2 /* AppDelegate.swift */,
 				FBEA46AC1F7F270900049BA2 /* ViewController.swift */,
 				FBEA46AE1F7F270900049BA2 /* Main.storyboard */,
@@ -106,6 +113,7 @@
 				FBEA46B31F7F270900049BA2 /* LaunchScreen.storyboard */,
 				FBEA46B61F7F270900049BA2 /* Info.plist */,
 				FB63F7211F9403130016945A /* MapViewController.swift */,
+				FBCEF99A1F943F7500AE0DBD /* RestaurantPin.swift */,
 			);
 			path = SmartMenu;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCEF99D1F94411400AE0DBD /* all_atlanta_restaurants.json in Resources */,
 				FBEA46B51F7F270900049BA2 /* LaunchScreen.storyboard in Resources */,
 				FBEA46B21F7F270900049BA2 /* Assets.xcassets in Resources */,
 				FBEA46B01F7F270900049BA2 /* Main.storyboard in Resources */,
@@ -245,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCEF99E1F94411500AE0DBD /* all_atlanta_restaurants.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCEF99F1F94411500AE0DBD /* all_atlanta_restaurants.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +275,7 @@
 			files = (
 				FBEA46AD1F7F270900049BA2 /* ViewController.swift in Sources */,
 				FB63F7221F9403130016945A /* MapViewController.swift in Sources */,
+				FBCEF99B1F943F7500AE0DBD /* RestaurantPin.swift in Sources */,
 				FBEA46AB1F7F270900049BA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
