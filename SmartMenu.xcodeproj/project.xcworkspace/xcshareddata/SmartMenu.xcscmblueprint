@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "76814D9B04C6ABCE83AE4D2C358AA03FC08EBBDC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "76814D9B04C6ABCE83AE4D2C358AA03FC08EBBDC" : 9223372036854775807,
+    "705B5B951E66272C34320F9492B211BDF47AB157" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2321A667-D38A-4E54-BF19-E79C44FA98AA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "76814D9B04C6ABCE83AE4D2C358AA03FC08EBBDC" : "SmartMenu\/",
+    "705B5B951E66272C34320F9492B211BDF47AB157" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SmartMenu",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SmartMenu.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xiaoyushowyou\/Mobile-App-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "705B5B951E66272C34320F9492B211BDF47AB157"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/riaverma96\/SmartMenu.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "76814D9B04C6ABCE83AE4D2C358AA03FC08EBBDC"
+    }
+  ]
+}

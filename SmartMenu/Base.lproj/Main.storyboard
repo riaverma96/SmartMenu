@@ -41,26 +41,20 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Continue as a ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oY3-mu-60V">
-                                <rect key="frame" x="23" y="504" width="259" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frontbackground" translatesAutoresizingMaskIntoConstraints="NO" id="whC-1Q-V3M">
-                                <rect key="frame" x="0.0" y="-335" width="375" height="720"/>
+                                <rect key="frame" x="0.0" y="-78" width="375" height="360"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to SmartMenu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saG-k4-ieH">
-                                <rect key="frame" x="54" y="443" width="267" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to SmartMenu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saG-k4-ieH">
+                                <rect key="frame" x="54" y="461" width="267" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="temp logo" translatesAutoresizingMaskIntoConstraints="NO" id="7h0-NE-ipg">
-                                <rect key="frame" x="94" y="304" width="132" height="116"/>
+                                <rect key="frame" x="121" y="304" width="132" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -69,7 +63,7 @@
                             <constraint firstItem="RSc-q7-eh9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="245" id="5To-oa-chZ"/>
                             <constraint firstAttribute="trailing" secondItem="whC-1Q-V3M" secondAttribute="trailing" id="E9G-Wh-36K"/>
                             <constraint firstItem="RSc-q7-eh9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZpV-n8-691"/>
-                            <constraint firstItem="RSc-q7-eh9" firstAttribute="top" secondItem="whC-1Q-V3M" secondAttribute="bottom" constant="143.5" id="aNz-g5-LMX"/>
+                            <constraint firstItem="RSc-q7-eh9" firstAttribute="top" secondItem="whC-1Q-V3M" secondAttribute="bottom" constant="246.5" id="aNz-g5-LMX"/>
                             <constraint firstItem="whC-1Q-V3M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ctf-5Z-Lo5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -219,7 +213,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcU-hc-Mlk">
                                 <rect key="frame" x="49" y="67" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt; Home"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="iRW-YW-1qp"/>
                                 </connections>
@@ -248,7 +244,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Confirm Restaurant"/>
                                 <connections>
-                                    <segue destination="3s1-FS-E0J" kind="show" id="toy-Ka-DT3"/>
+                                    <segue destination="XgJ-L8-ZCu" kind="show" id="Unt-3d-bZF"/>
                                 </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vld-GS-xD5">
@@ -335,29 +331,82 @@
             </objects>
             <point key="canvasLocation" x="873" y="2987"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu Table View Controller-->
+        <scene sceneID="iMe-Rq-xXQ">
+            <objects>
+                <tableViewController id="XgJ-L8-ZCu" customClass="MenuTableViewController" customModule="SmartMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xYi-DU-yIv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="140" id="Ihh-rL-D6C" customClass="MenuTableViewCell" customModule="SmartMenu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ihh-rL-D6C" id="6m4-pF-lup" customClass="MenuTableViewCell" customModule="SmartMenu" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaC-8S-c2X">
+                                            <rect key="frame" x="287" y="36" width="41" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="ADD" image="add"/>
+                                            <connections>
+                                                <segue destination="3s1-FS-E0J" kind="show" id="vpk-6D-PRL"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meal1" translatesAutoresizingMaskIntoConstraints="NO" id="5Vf-qp-jjW">
+                                            <rect key="frame" x="19" y="20" width="62" height="64"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esY-bA-1kj">
+                                            <rect key="frame" x="99" y="12" width="177" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffS-Eo-cOf">
+                                            <rect key="frame" x="99" y="47" width="98" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="esY-bA-1kj" id="TSO-rs-Rbb"/>
+                                    <outlet property="price" destination="ffS-Eo-cOf" id="B1Q-Zi-xPi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XgJ-L8-ZCu" id="Psm-R8-JW5"/>
+                            <outlet property="delegate" destination="XgJ-L8-ZCu" id="E5F-aq-mNa"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YUk-vD-EHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="2138.6806596701649"/>
+        </scene>
+        <!--Menu View Controller-->
         <scene sceneID="8Db-8h-53u">
             <objects>
-                <viewController id="3s1-FS-E0J" sceneMemberID="viewController">
+                <viewController id="3s1-FS-E0J" customClass="MenuViewController" customModule="SmartMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9d1-BU-PSu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xz3-Bd-Dbj">
-                                <rect key="frame" x="48" y="529" width="249" height="30"/>
+                                <rect key="frame" x="63" y="579" width="249" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add to Basket"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNi-2L-uN6">
-                                <rect key="frame" x="16" y="67" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcg-Cd-vjV">
-                                <rect key="frame" x="48" y="567" width="249" height="30"/>
+                                <rect key="frame" x="63" y="617" width="249" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Checkout"/>
@@ -372,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtK-RX-aLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="2213"/>
+            <point key="canvasLocation" x="873" y="2139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6VO-XP-ZQl">
@@ -405,9 +454,6 @@
                                 <rect key="frame" x="141" y="491" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="&lt; Home"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="m6G-g0-BB6"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -420,12 +466,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="frontbackground" width="540" height="720"/>
-        <image name="temp logo" width="225" height="225"/>
+        <image name="add" width="512" height="512"/>
+        <image name="frontbackground" width="270" height="360"/>
+        <image name="meal1" width="967" height="544"/>
+        <image name="temp logo" width="112" height="112"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="r7u-oB-a1s"/>
         <segue reference="dFp-Le-M3J"/>
-        <segue reference="m6G-g0-BB6"/>
+        <segue reference="iRW-YW-1qp"/>
     </inferredMetricsTieBreakers>
 </document>
