@@ -38,7 +38,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 let object = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
                 
                 if let dictionary = object as? [String: AnyObject] {
-                    print("json is a dictionary")
+                    print("MapViewController - json is a dictionary")
                     readJSONObject(object: dictionary)
                 } else if json is [Any] {
                     // json is an array

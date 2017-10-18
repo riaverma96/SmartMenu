@@ -21,7 +21,7 @@ class MenuViewController: UIViewController {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
                     let object = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
                     if let dictionary = object as? [String: AnyObject] {
-                        print("json is a dictionary")
+                        print("MenuViewController - json is a dictionary")
                         readJSONObject(object: dictionary)
                     } else if json is [Any] {
                         if let tm = json as? NSArray {
@@ -29,7 +29,7 @@ class MenuViewController: UIViewController {
                                 print("inside loop")
                                 if let dict = obj as? NSDictionary {
                                     if let items = dict["items"] as? NSArray {
-                                        print("--------------------------------")
+                                        print("----------------MenuViewController----------------")
                                         for item in items {
                                             let tmp = item as! NSDictionary
                                             let price = tmp["basePrice"]
