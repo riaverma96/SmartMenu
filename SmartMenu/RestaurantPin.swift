@@ -8,13 +8,15 @@
 import MapKit
 
 class RestaurantPin : NSObject, MKAnnotation {
-    var title: String?
-    var subtitle: String?
+    var title : String?
     var coordinate: CLLocationCoordinate2D
+    var apiKey : String?
+    var logoURL : String?
     
-    init(title : String, subtitle : String, coordinate : CLLocationCoordinate2D) {
+    init(title : String, coordinate : CLLocationCoordinate2D, apiKey : String, logoURL : String) {
         self.title = title
-        self.subtitle = subtitle
         self.coordinate = coordinate
+        self.apiKey = apiKey
+        self.logoURL = logoURL
     }
 }
