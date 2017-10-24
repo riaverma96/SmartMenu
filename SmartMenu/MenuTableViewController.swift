@@ -17,6 +17,7 @@ class MenuTableViewController: UITableViewController {
         super.viewDidLoad()
         //loadSampleMeals()
             // Do any additional setup after loading the view, typically from a nib.
+        /*
             do {
                 let file = Bundle.main.url(forResource: "menu", withExtension: "json")
                 if (file != nil) {
@@ -87,6 +88,7 @@ class MenuTableViewController: UITableViewController {
             } catch {
                 print(error.localizedDescription)
             }
+       */
     }
     
 //    func readJSONObject(object: [String: AnyObject]) {
@@ -133,6 +135,13 @@ class MenuTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow! as NSIndexPath
+        let DestinationViewController = segue.destination as! MenuDetailViewController
+        var subcatogary : Meal
+        subcatogary = meals[indexPath.row]
+        DestinationViewController.detail = subcatogary
+    }
     
     /*
      // Override to support conditional editing of the table view.

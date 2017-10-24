@@ -15,6 +15,7 @@
 		20CDC0841F9545F2001FEC9C /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC0831F9545F2001FEC9C /* MenuTableViewCell.swift */; };
 		20CDC0861F954610001FEC9C /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC0851F954610001FEC9C /* MenuTableViewController.swift */; };
 		20CDC0881F954D6E001FEC9C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC0871F954D6E001FEC9C /* Meal.swift */; };
+		7E31492E1F9FDCCD009329CB /* MenuDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31492D1F9FDCCD009329CB /* MenuDetailViewController.swift */; };
 		FB0310AA1F9E8A2B002A3E9B /* RestaurantPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0310A91F9E8A2B002A3E9B /* RestaurantPinView.swift */; };
 		FB63F7221F9403130016945A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63F7211F9403130016945A /* MapViewController.swift */; };
 		FBCEF99B1F943F7500AE0DBD /* RestaurantPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCEF99A1F943F7500AE0DBD /* RestaurantPin.swift */; };
@@ -54,6 +55,7 @@
 		20CDC0831F9545F2001FEC9C /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		20CDC0851F954610001FEC9C /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		20CDC0871F954D6E001FEC9C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		7E31492D1F9FDCCD009329CB /* MenuDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailViewController.swift; sourceTree = "<group>"; };
 		FB0310A91F9E8A2B002A3E9B /* RestaurantPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPinView.swift; sourceTree = "<group>"; };
 		FB63F7211F9403130016945A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FBCEF99A1F943F7500AE0DBD /* RestaurantPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPin.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				20CDC0871F954D6E001FEC9C /* Meal.swift */,
 				FBEA46AE1F7F270900049BA2 /* Main.storyboard */,
 				20CDC0831F9545F2001FEC9C /* MenuTableViewCell.swift */,
+				7E31492D1F9FDCCD009329CB /* MenuDetailViewController.swift */,
 				20CDC0851F954610001FEC9C /* MenuTableViewController.swift */,
 				FBEA46B11F7F270900049BA2 /* Assets.xcassets */,
 				FBEA46B31F7F270900049BA2 /* LaunchScreen.storyboard */,
@@ -304,6 +307,7 @@
 				FB63F7221F9403130016945A /* MapViewController.swift in Sources */,
 				204432801F97DC8600F2ED1F /* CategoryTableViewController.swift in Sources */,
 				20CDC0881F954D6E001FEC9C /* Meal.swift in Sources */,
+				7E31492E1F9FDCCD009329CB /* MenuDetailViewController.swift in Sources */,
 				20CDC0841F9545F2001FEC9C /* MenuTableViewCell.swift in Sources */,
 				FBCEF99B1F943F7500AE0DBD /* RestaurantPin.swift in Sources */,
 				FBEA46AB1F7F270900049BA2 /* AppDelegate.swift in Sources */,
@@ -476,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M25BEB6T8G;
+				DEVELOPMENT_TEAM = 7UYFPW3L73;
 				INFOPLIST_FILE = SmartMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alpha.SmartMenu;
@@ -493,7 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M25BEB6T8G;
+				DEVELOPMENT_TEAM = 7UYFPW3L73;
 				INFOPLIST_FILE = SmartMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alpha.SmartMenu;

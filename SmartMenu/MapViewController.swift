@@ -90,7 +90,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         self.mapView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
         self.mapView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
         self.mapView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-        self.mapView.translatesAutoresizingMaskIntoConstraints = false
+        //self.mapView.translatesAutoresizingMaskIntoConstraints = false
+        self.mapView.translatesAutoresizingMaskIntoConstraints = true
     }
     
     func loadAnnotations() {
