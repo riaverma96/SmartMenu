@@ -8,7 +8,8 @@
 
 import UIKit
 
-class CategoryTableViewController: UITableViewController {var meals = [Meal]()
+class CategoryTableViewController: UITableViewController {
+    var meals = [[Meal]]()
     var names = [String]()
     var prices = [String]()
     var categoryList = [String]()
@@ -31,10 +32,11 @@ class CategoryTableViewController: UITableViewController {var meals = [Meal]()
                         //var categoryList = [String]()
                         for obj in tm {
                             //print("inside loop")
+                            var temp_meal = [Meal]()
                             if let dict = obj as? NSDictionary {
                                 categoryList.append(dict["name"] as! String)
                                 if let items = dict["items"] as? NSArray {
-                                    print("---------------CategoryTableViewController-----------------")
+                                    //print("---------------CategoryTableViewController-----------------")
                                     for item in items {
                                         let tmp = item as! NSDictionary
                                         let price = tmp["basePrice"]
@@ -45,19 +47,18 @@ class CategoryTableViewController: UITableViewController {var meals = [Meal]()
                                         // name
                                         
                                         // eg. name!  price!
-                        
+                                        
                                         let myName = name! as! String
                                         let myPrice = ((price!) as AnyObject).stringValue
                                         
-                                        print("name = ", myName)
-                                        print("price = ", myPrice ?? 1)
+                                        //print("name = ", myName)
+                                        //print("price = ", myPrice ?? 1)
                                         
                                         guard let meal = Meal(name: myName, price: myPrice!) else {return}
                                         
-                                        print("item",meal)
+                                        //print("item",meal)
                                         
-                                        meals.append(meal)
-                                        
+                                        temp_meal.append(meal)
                                     }
                                     
                                 } else {
@@ -65,7 +66,7 @@ class CategoryTableViewController: UITableViewController {var meals = [Meal]()
                                     print("deaddead")
                                     
                                 }
-                                
+                                meals.append(temp_meal)
                             }
                             
                         }
@@ -115,15 +116,15 @@ class CategoryTableViewController: UITableViewController {var meals = [Meal]()
         }
         
         // Fetches the appropriate meal for the data source layout.
-//        for count in categoryList
-//        {
-//            cell.CategoryName.text = count
-//            return cell
-//        }
+        //        for count in categoryList
+        //        {
+        //            cell.CategoryName.text = count
+        //            return cell
+        //        }
         
         print("item Category", indexPath.row, categoryList[indexPath.row])
         let cateName = categoryList[indexPath.row]
-        let meal = meals[indexPath.row]
+        //let meal = meals[indexPath.row]
         //print (meal)
         //let mealname = names[indexPath.row]
         //let mealprice = prices[indexPath.row]
@@ -131,11 +132,18 @@ class CategoryTableViewController: UITableViewController {var meals = [Meal]()
         //cell.price.text = meal.price
         return cell
         
-//        cell.CategoryName.text = categoryList[indexPath.row]
-//        return cell
+        //        cell.CategoryName.text = categoryList[indexPath.row]
+        //        return cell
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow as! NSIndexPath
+        var DestinationViewController = segue.destination as! MenuTableViewController
+        var subcatogary : [Meal]
+        subcatogary = meals[indexPath.row]
+        DestinationViewController.meals = subcatogary
+        
+    }
 }
 
 
