@@ -406,7 +406,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1z1-Rr-ZJS">
                                 <rect key="frame" x="0.0" y="64" width="375" height="936"/>
                                 <subviews>
@@ -431,9 +430,6 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Check Out"/>
-                                                <connections>
-                                                    <segue destination="2P8-nm-GtR" kind="show" id="qkJ-y4-lnY"/>
-                                                </connections>
                                             </button>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JHn-Ab-Qaz">
                                                 <rect key="frame" x="186" y="265" width="166" height="29"/>
@@ -505,7 +501,6 @@
                                     <constraint firstItem="wNI-Ty-VCs" firstAttribute="top" secondItem="1z1-Rr-ZJS" secondAttribute="top" id="iqe-YM-2k1"/>
                                 </constraints>
                             </scrollView>
-=======
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xz3-Bd-Dbj">
                                 <rect key="frame" x="53" y="347" width="249" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -531,7 +526,6 @@
                                     <segue destination="DTo-k7-6JL" kind="show" id="Dbh-UU-KaA"/>
                                 </connections>
                             </button>
->>>>>>> 4e64e2e5018abc67a2eceeb1e14eff5e774b177c
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
