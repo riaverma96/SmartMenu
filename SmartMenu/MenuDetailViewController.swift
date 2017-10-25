@@ -12,8 +12,9 @@ class MenuDetailViewController: UIViewController {
     
     @IBOutlet weak var spicy: UISlider!
     var detail = Meal(name:"Unknown",price:"Unknown",description:"")
+   
     @IBOutlet weak var label: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = (detail?.name)!+"\nDecription:"+(detail?.description)!

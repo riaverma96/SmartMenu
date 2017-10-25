@@ -129,6 +129,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		73DC57051FA023E200BB5891 /* stripe */ = {
+			isa = PBXGroup;
+			children = (
+				73DC57001FA01B4100BB5891 /* CardFieldViewController.swift */,
+				73DC56FB1FA01B0900BB5891 /* BrowseViewController.swift */,
+				73DC56FF1FA01B4100BB5891 /* MockAPIClient.swift */,
+				73DC56FE1FA01B4100BB5891 /* MockCustomerContext.swift */,
+				73DC56FD1FA01B4100BB5891 /* ThemeViewController.swift */,
+			);
+			path = stripe;
+			sourceTree = "<group>";
+		};
 		AB325BE078156036C07F1814 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +175,7 @@
 		FBEA46A91F7F270900049BA2 /* SmartMenu */ = {
 			isa = PBXGroup;
 			children = (
+				73DC57051FA023E200BB5891 /* stripe */,
 				2044327F1F97DC8600F2ED1F /* CategoryTableViewController.swift */,
 				204432811F97DD3C00F2ED1F /* CategoryTableViewCell.swift */,
 				FBCEF99C1F94410200AE0DBD /* all_atlanta_restaurants.json */,
@@ -171,11 +184,6 @@
 				FBEA46AE1F7F270900049BA2 /* Main.storyboard */,
 				73DC56F91FA01AC100BB5891 /* AppDelegate.swift */,
 				20CDC0831F9545F2001FEC9C /* MenuTableViewCell.swift */,
-				73DC57001FA01B4100BB5891 /* CardFieldViewController.swift */,
-				73DC56FF1FA01B4100BB5891 /* MockAPIClient.swift */,
-				73DC56FE1FA01B4100BB5891 /* MockCustomerContext.swift */,
-				73DC56FD1FA01B4100BB5891 /* ThemeViewController.swift */,
-				73DC56FB1FA01B0900BB5891 /* BrowseViewController.swift */,
 				7E31492D1F9FDCCD009329CB /* MenuDetailViewController.swift */,
 				20CDC0851F954610001FEC9C /* MenuTableViewController.swift */,
 				FBEA46B11F7F270900049BA2 /* Assets.xcassets */,
