@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -298,11 +298,11 @@
             </objects>
             <point key="canvasLocation" x="873" y="-252"/>
         </scene>
-        <!--View Controller-->
+        <!--Card Field View Controller-->
         <scene sceneID="ThL-VJ-9vi">
             <objects>
-                <viewController id="2P8-nm-GtR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zzm-au-8j4">
+                <viewController id="2P8-nm-GtR" customClass="CardFieldViewController" customModule="SmartMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zzm-au-8j4" customClass="STPPaymentMethodTableViewCell">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
