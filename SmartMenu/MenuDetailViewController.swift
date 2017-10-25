@@ -10,12 +10,15 @@ import UIKit
 
 class MenuDetailViewController: UIViewController {
     
-    var detail = Meal(name:"Unknown",price:"Unknown")
+    @IBOutlet weak var spicy: UISlider!
+    var detail = Meal(name:"Unknown",price:"Unknown",description:"")
     @IBOutlet weak var label: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = detail?.name
+        label.text = (detail?.name)!+"\nDecription:"+(detail?.description)!
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
         // Do any additional setup after loading the view.
     }
     
@@ -24,6 +27,9 @@ class MenuDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidLayoutSubviews() {
+        label.sizeToFit()
+    }
 
     /*
     // MARK: - Navigation
