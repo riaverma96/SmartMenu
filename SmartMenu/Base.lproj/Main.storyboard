@@ -53,7 +53,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="temp logo" translatesAutoresizingMaskIntoConstraints="NO" id="7h0-NE-ipg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="7h0-NE-ipg">
                                 <rect key="frame" x="121" y="304" width="132" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -298,39 +298,6 @@
             </objects>
             <point key="canvasLocation" x="873" y="-252"/>
         </scene>
-        <!--Card Field View Controller-->
-        <scene sceneID="ThL-VJ-9vi">
-            <objects>
-                <viewController id="2P8-nm-GtR" customClass="CardFieldViewController" customModule="SmartMenu" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zzm-au-8j4" customClass="STPPaymentMethodTableViewCell">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7i1-Dm-BhX">
-                                <rect key="frame" x="42" y="69" width="291" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-KB-9AK">
-                                <rect key="frame" x="63" y="556" width="249" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Finish &amp; Pay"/>
-                                <connections>
-                                    <segue destination="AtI-LR-dgr" kind="show" id="q6t-1G-lhv"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="Ldb-IT-R4v"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fwN-Kh-wSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1230" y="2627"/>
-        </scene>
         <!--Category Table View Controller-->
         <scene sceneID="ufT-Fh-EW1">
             <objects>
@@ -444,6 +411,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add to Basket"/>
+                                <connections>
+                                    <segue destination="AtI-LR-dgr" kind="show" id="gQe-uw-flF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0O-8U-P5G">
                                 <rect key="frame" x="37" y="126" width="265" height="181"/>
@@ -458,7 +428,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Checkout"/>
                                 <connections>
-                                    <segue destination="2P8-nm-GtR" kind="show" id="3TO-3G-HIZ"/>
+                                    <segue destination="DTo-k7-6JL" kind="show" id="Dbh-UU-KaA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -474,10 +444,10 @@
             </objects>
             <point key="canvasLocation" x="256.80000000000001" y="2626.6866566716644"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment View Controller-->
         <scene sceneID="6VO-XP-ZQl">
             <objects>
-                <viewController id="AtI-LR-dgr" sceneMemberID="viewController">
+                <viewController id="AtI-LR-dgr" customClass="paymentViewController" customModule="SmartMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ql-ak-ADP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -513,13 +483,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HoT-Es-rOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="3474"/>
+            <point key="canvasLocation" x="1356" y="2727"/>
+        </scene>
+        <!--Browse View Controller-->
+        <scene sceneID="dSe-Ka-0Jf">
+            <objects>
+                <tableViewController id="DTo-k7-6JL" customClass="BrowseViewController" customModule="SmartMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CRD-Vz-tiR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8hJ-Bq-zui">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8hJ-Bq-zui" id="LMq-C4-dMC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JOd-j5-AxW">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JOd-j5-AxW" id="t5M-wf-2Xh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DTo-k7-6JL" id="AxQ-mu-TBl"/>
+                            <outlet property="delegate" destination="DTo-k7-6JL" id="LyF-Ny-1zJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCg-Wa-ump" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="3681"/>
         </scene>
     </scenes>
     <resources>
         <image name="frontbackground" width="270" height="360"/>
+        <image name="icon" width="430" height="468"/>
         <image name="meal1" width="967" height="544"/>
-        <image name="temp logo" width="112" height="112"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="r7u-oB-a1s"/>

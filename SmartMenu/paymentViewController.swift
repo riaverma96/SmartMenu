@@ -7,12 +7,39 @@
 //
 
 import UIKit
+import Stripe
 
 class paymentViewController: UIViewController {
-
+    let themeViewController = ThemeViewController()
+    let customerContext = MockCustomerContext()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let theme = themeViewController.theme.stpTheme
+        let config = STPPaymentConfiguration()
+        config.additionalPaymentMethods = .all
+        config.requiredBillingAddressFields = .none
+        config.appleMerchantIdentifier = "dummy-merchant-id"
+        let paymentViewController = STPPaymentMethodsViewController(configuration: config,
+                                                             theme: theme,
+                                                             customerContext: self.customerContext,
+                                                             delegate: self)
+        let navigationController = UINavigationController(rootViewController: paymentViewController)
+        navigationController.navigationBar.stp_theme = theme
+        present(navigationController, animated: true, completion: nil)
+        
+        func paymentMethodsViewControllerDidCancel(_ paymentMethodsViewController: STPPaymentMethodsViewController) {
+            dismiss(animated: true, completion: nil)
+        }
+        
+        func paymentMethodsViewControllerDidFinish(_ paymentMethodsViewController: STPPaymentMethodsViewController) {
+            paymentMethodsViewController.navigationController?.popViewController(animated: true)
+        }
+        
+        func paymentMethodsViewController(_ paymentMethodsViewController: STPPaymentMethodsViewController, didFailToLoadWithError error: Error) {
+            dismiss(animated: true, completion: nil)
+        }
         // Do any additional setup after loading the view.
     }
 
