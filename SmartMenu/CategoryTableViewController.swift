@@ -41,7 +41,7 @@ class CategoryTableViewController: UITableViewController {
                                         let tmp = item as! NSDictionary
                                         let price = tmp["basePrice"]
                                         let name = tmp["name"]
-                                        
+                                        let description = tmp["description"]
                                         // when use the name and price, remember to put a ! after the variable
                                         
                                         // name
@@ -50,12 +50,17 @@ class CategoryTableViewController: UITableViewController {
                                         
                                         let myName = name! as! String
                                         let myPrice = ((price!) as AnyObject).stringValue
+                                        let myDescription = description ?? "Sorry, no description available at this point"
                                         
                                         //print("name = ", myName)
                                         //print("price = ", myPrice ?? 1)
-                                        
-                                        guard let meal = Meal(name: myName, price: myPrice!) else {return}
-                                        
+                                       //print("description = ", myDescription ?? "No description")
+                                        guard let meal = Meal(name: myName, price: myPrice!, description: myDescription as! String) else {return}
+                                      //  if !(myDescription?.isEmpty)!{
+                                           // meal.description = myDescription!
+                                       //}
+                                        print("description = ", myDescription)
+                                        //meal.description = myDescription as! String
                                         //print("item",meal)
                                         
                                         temp_meal.append(meal)
@@ -142,7 +147,6 @@ class CategoryTableViewController: UITableViewController {
         var subcatogary : [Meal]
         subcatogary = meals[indexPath.row]
         DestinationViewController.meals = subcatogary
-        
     }
 }
 
