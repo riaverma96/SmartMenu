@@ -24,7 +24,7 @@ class paymentViewController: UIViewController {
         let paymentViewController = STPPaymentMethodsViewController(configuration: config,
                                                              theme: theme,
                                                              customerContext: self.customerContext,
-                                                             delegate: self)
+                                                             delegate: self as! STPPaymentMethodsViewControllerDelegate)
         let navigationController = UINavigationController(rootViewController: paymentViewController)
         navigationController.navigationBar.stp_theme = theme
         present(navigationController, animated: true, completion: nil)
