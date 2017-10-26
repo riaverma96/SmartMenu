@@ -11,6 +11,7 @@ import Stripe
 
 class BrowseViewController: UITableViewController, STPAddCardViewControllerDelegate, STPPaymentMethodsViewControllerDelegate, STPShippingAddressViewControllerDelegate {
     
+    
     enum Demo: Int {
         static let count = 5
         case STPPaymentCardTextField
@@ -45,7 +46,7 @@ class BrowseViewController: UITableViewController, STPAddCardViewControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Stripe UI Examples"
+        //title = "Stripe UI Examples"
         tableView.tableFooterView = UIView()
         tableView.rowHeight = 60
         navigationController?.navigationBar.isTranslucent = false

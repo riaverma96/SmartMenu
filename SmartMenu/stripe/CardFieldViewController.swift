@@ -35,6 +35,11 @@ class CardFieldViewController: UIViewController {
     @objc func done() {
         dismiss(animated: true, completion: nil)
     }
+    
+    @objc func action () {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CategoryTableViewController")
+        self.present(vc!, animated:true, completion:nil)
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

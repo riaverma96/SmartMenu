@@ -15,6 +15,7 @@ class MenuTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.tintColor = UIColor.white;
         //loadSampleMeals()
             // Do any additional setup after loading the view, typically from a nib.
         /*
@@ -136,11 +137,14 @@ class MenuTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      if let navigationController = segue.destination as? UINavigationController {
+            let childViewController = navigationController.topViewController as? MenuDetailViewController
         let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow! as NSIndexPath
-        let DestinationViewController = segue.destination as! MenuDetailViewController
+        //let DestinationViewController = segue.destination as! MenuDetailViewController
         var subcatogary : Meal
         subcatogary = meals[indexPath.row]
-        DestinationViewController.detail = subcatogary
+        childViewController?.detail = subcatogary
+        }
     }
     
     /*

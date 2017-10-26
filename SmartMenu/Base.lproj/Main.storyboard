@@ -120,7 +120,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ5-Nk-BBY">
                                 <rect key="frame" x="55" y="73" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt; Home"/>
+                                <state key="normal" title="&lt; Home">
+                                    <color key="titleColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="b4j-Yt-bj7"/>
                                 </connections>
@@ -182,14 +184,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm2-YB-0ZD">
                                 <rect key="frame" x="74" y="360" width="226" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99867016080000004" green="0.32527303699999999" blue="0.078799895940000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Start Munchin'">
+                                <state key="normal" title="Start Munching">
                                     <color key="titleColor" red="0.99057347870000001" green="0.99867016080000004" blue="0.96397641069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -206,15 +208,19 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twa-yX-Nbg">
                                 <rect key="frame" x="218" y="402" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="8zu-mC-AjS" kind="show" id="bAI-H9-bNi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcU-hc-Mlk">
-                                <rect key="frame" x="49" y="67" width="55" height="30"/>
+                                <rect key="frame" x="29" y="88" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Home">
+                                    <color key="titleColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
                                 <connections>
@@ -223,13 +229,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ASj-lq-K7x"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sign In" id="Max-EC-Pvi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmE-Me-92q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="497"/>
+            <point key="canvasLocation" x="872.79999999999995" y="496.10194902548727"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="SKk-v6-hoX">
@@ -239,19 +246,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vld-GS-xD5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="589"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSo-L2-7IQ">
-                                <rect key="frame" x="63" y="597" width="249" height="30"/>
+                                <rect key="frame" x="63" y="617" width="249" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Confirm Restaurant"/>
+                                <state key="normal" title="Confirm Restaurant">
+                                    <color key="titleColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="ebc-nV-KbK" kind="show" id="kkT-Ln-qc6"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vld-GS-xD5">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="SY6-4g-Gp4"/>
@@ -337,13 +346,23 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="d0b-uL-SZY">
                         <leftBarButtonItems>
-                            <barButtonItem title="RESTAURANT" id="xBR-Jp-DXP"/>
-                            <barButtonItem title="MENU" id="Iik-ja-X4i"/>
+                            <barButtonItem title="RESTAURANT" id="xBR-Jp-DXP">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem title="MENU" id="Iik-ja-X4i">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
                         </leftBarButtonItems>
                         <rightBarButtonItems>
-                            <barButtonItem title="PAYMENT" id="tzK-Y4-sU9"/>
-                            <barButtonItem title="BASKET" id="n37-jP-FO7"/>
-                            <barButtonItem title="ME" id="K9o-44-ThA"/>
+                            <barButtonItem title="PAYMENT" id="tzK-Y4-sU9">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem title="BASKET" id="n37-jP-FO7">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem title="ME" id="K9o-44-ThA">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
@@ -365,6 +384,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="140" id="Ihh-rL-D6C" customClass="MenuTableViewCell" customModule="SmartMenu">
                                 <rect key="frame" x="0.0" y="28" width="375" height="140"/>
@@ -373,21 +396,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meal1" translatesAutoresizingMaskIntoConstraints="NO" id="5Vf-qp-jjW">
-                                            <rect key="frame" x="19" y="20" width="62" height="64"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esY-bA-1kj">
-                                            <rect key="frame" x="99" y="12" width="177" height="44"/>
+                                            <rect key="frame" x="33" y="8" width="325" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffS-Eo-cOf">
-                                            <rect key="frame" x="99" y="47" width="98" height="44"/>
+                                            <rect key="frame" x="33" y="54" width="98" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -408,7 +427,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUk-vD-EHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-646" y="2066"/>
+            <point key="canvasLocation" x="-647.20000000000005" y="2065.8170914542729"/>
         </scene>
         <!--Menu Detail View Controller-->
         <scene sceneID="8Db-8h-53u">
@@ -439,6 +458,7 @@
                                                     <segment title="2"/>
                                                     <segment title="3"/>
                                                 </segments>
+                                                <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="spicy_choice_action:" destination="3s1-FS-E0J" eventType="valueChanged" id="47T-S6-Z1L"/>
                                                 </connections>
@@ -451,6 +471,7 @@
                                                     <segment title="2"/>
                                                     <segment title="3"/>
                                                 </segments>
+                                                <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="sweet_choice_action:" destination="3s1-FS-E0J" eventType="valueChanged" id="352-8S-135"/>
                                                 </connections>
@@ -476,6 +497,7 @@
                                                     <segment title="Yes"/>
                                                     <segment title="No"/>
                                                 </segments>
+                                                <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="allergic_one_action:" destination="3s1-FS-E0J" eventType="valueChanged" id="UFn-pS-Yni"/>
                                                 </connections>
@@ -491,7 +513,9 @@
                                                 <rect key="frame" x="60" y="876" width="255" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="Checkout"/>
+                                                <state key="normal" title="Checkout">
+                                                    <color key="titleColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="0f3-eg-nxG" kind="show" id="Dbh-UU-KaA"/>
                                                 </connections>
@@ -500,7 +524,9 @@
                                                 <rect key="frame" x="60" y="838" width="249" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="Add to Basket"/>
+                                                <state key="normal" title="Add to Basket">
+                                                    <color key="titleColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="AtI-LR-dgr" kind="show" id="gQe-uw-flF"/>
                                                 </connections>
@@ -539,9 +565,7 @@
                         <viewLayoutGuide key="safeArea" id="Rfz-zU-xRQ"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="vbP-s3-BWL">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="fYN-i6-tos"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="vbP-s3-BWL"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="700"/>
                     <connections>
@@ -616,6 +640,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="AtI-LR-dgr" kind="show" id="8Cc-QK-XhU"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JOd-j5-AxW">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
@@ -637,13 +664,23 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="4hH-KA-pZ9">
                         <leftBarButtonItems>
-                            <barButtonItem title="Item" id="9s0-bD-mAk"/>
-                            <barButtonItem title="Item" id="Zno-Ek-hCY"/>
+                            <barButtonItem title="RESTAURANT" id="9s0-bD-mAk">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem title="MENU" id="Zno-Ek-hCY">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
                         </leftBarButtonItems>
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="n4c-Zr-Oz8"/>
-                            <barButtonItem title="Item" id="Sto-Vt-6Ty"/>
-                            <barButtonItem title="Item" id="Sq8-FB-w6a"/>
+                            <barButtonItem title="PAYMENT" id="n4c-Zr-Oz8">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem title="BASKET" id="Sto-Vt-6Ty">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem title="ME" id="Sq8-FB-w6a">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -713,11 +750,12 @@
     <resources>
         <image name="frontbackground" width="270" height="360"/>
         <image name="icon" width="430" height="468"/>
-        <image name="meal1" width="967" height="544"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="bAI-H9-bNi"/>
+        <segue reference="gQe-uw-flF"/>
         <segue reference="r7u-oB-a1s"/>
-        <segue reference="dFp-Le-M3J"/>
+        <segue reference="4aw-ym-mYs"/>
         <segue reference="iRW-YW-1qp"/>
     </inferredMetricsTieBreakers>
 </document>

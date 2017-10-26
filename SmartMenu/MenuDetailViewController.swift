@@ -21,7 +21,8 @@ class MenuDetailViewController: UIViewController {
     @IBOutlet weak var allergic_one: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = (detail?.name)!+"\nDecription:"+(detail?.description)!
+        label.text = (detail?.name)!+"\n\nDecription: "+(detail?.description)!
+
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         // Do any additional setup after loading the view.
