@@ -5,7 +5,7 @@
 //  Created by Ben Guo on 7/18/17.
 //  Copyright © 2017 Stripe. All rights reserved.
 //
-
+import Firebase
 import UIKit
 import Stripe
 
@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window.rootViewController = navController
 //        window.makeKeyAndVisible()
 //        self.window = window
+        FirebaseApp.configure()
         return true
     }
-
 }
 
