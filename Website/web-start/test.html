@@ -47,6 +47,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
   <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
   <!-- App Styling -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
@@ -96,51 +97,38 @@ tr:nth-child(even) {
 
   <!--table goes here-->
   <table id = "customers">
-  <tr>
-    <th>Order#</th>
-    <th>Table#/Take Out</th>
-    <th>Item</th>
-    <th>Number</th>
-    <th>Waiting Time</th>
-    <th>Detailed Notes</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td class="tg-baqh">1</td>
-    <td class="tg-baqh">1</td>
-    <td class="tg-baqh">Caser Salad</td>
-    <td class="tg-baqh">1</td>
-    <td class="tg-baqh">6min</td>
-    <td class="tg-baqh">NO</td>
-    <td class="tg-stzu">Ready</td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">2</td>
-    <td class="tg-baqh">2</td>
-    <td class="tg-baqh">Ramen</td>
-    <td class="tg-baqh">2</td>
-    <td class="tg-baqh">2min</td>
-    <td class="tg-baqh">NO</td>
-    <td class="tg-d78e">Ready</td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">3</td>
-    <td class="tg-baqh">Take Out</td>
-    <td class="tg-baqh">Ramen</td>
-    <td class="tg-baqh">1</td>
-    <td class="tg-baqh">1min</td>
-    <td class="tg-baqh">Requirement</td>
-    <td class="tg-d78e">Ready</td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">4</td>
-    <td class="tg-baqh">1</td>
-    <td class="tg-baqh">Hambuger</td>
-    <td class="tg-baqh">3</td>
-    <td class="tg-baqh">1min</td>
-    <td class="tg-baqh">Requirement</td>
-    <td class="tg-d78e">Ready</td>
-  </tr>
+      <tbody>
+          <tr>
+            <th>Order#</th>
+            <th>Table#/Take Out</th>
+            <th>Item List</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td class="tg-baqh">1</td>
+            <td class="tg-baqh">1</td>
+            <td class="tg-baqh">Caser Salad</td>
+            <td class="tg-baqh">1</td>
+          </tr>
+          <tr>
+            <td class="tg-baqh">2</td>
+            <td class="tg-baqh">2</td>
+            <td class="tg-baqh">Ramen</td>
+            <td class="tg-baqh">2</td>
+          </tr>
+          <tr>
+            <td class="tg-baqh">3</td>
+            <td class="tg-baqh">Take Out</td>
+            <td class="tg-baqh">Ramen</td>
+            <td class="tg-baqh">1</td>
+          </tr>
+          <tr>
+            <td class="tg-baqh">4</td>
+            <td class="tg-baqh">1</td>
+            <td class="tg-baqh">Hambuger</td>
+            <td class="tg-baqh">3</td>
+          </tr>
+      </tbody>
   </table>
 
 </div>
@@ -159,5 +147,38 @@ app.controller('customersCtrl', function($scope, $http) {
 </script>
 
 <script src="scripts/main.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDlF12TmJb7U17Crr4cskYm0vTLmCpFKBE",
+        authDomain: "smart-menu-94ff4.firebaseapp.com",
+        databaseURL: "https://smart-menu-94ff4.firebaseio.com",
+        projectId: "smart-menu-94ff4",
+        storageBucket: "smart-menu-94ff4.appspot.com",
+        messagingSenderId: "357649457207"
+    };
+    firebase.initializeApp(config);
+    var database = firebase.database();
+    database.ref('restaurants/0/orders').on('value', function(snapshot){
+                        if(snapshot.exists()){
+                                            alert("snapshot exists!!");
+
+                            var content = '';
+                            snapshot.forEach(function(data){
+                                             var val = data.val();
+                                             content +='<tr>';
+                                             content += '<td>' + val.order_number + '</td>';
+                                             content += '<td>' + val.table_number_or_take_out + '</td>';
+                                             content += '<td>' + val.item_list + '</td>';
+                                             content += '<td>' + val.in_progress + '</td>';
+                                             content += '</tr>';
+                                             });
+                                            $('#customers > tbody:last-child').append(content);
+                            }
+                });
+    </script>
 </body>
 </html>
