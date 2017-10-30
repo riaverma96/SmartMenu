@@ -127,6 +127,26 @@ app.controller('customersCtrl', function($scope, $http) {
 
 <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
 <script>
+    /* When the user clicks on the button,
+     toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
     // Initialize Firebase
     var config = {
         apiKey: "AIzaSyDlF12TmJb7U17Crr4cskYm0vTLmCpFKBE",
@@ -144,22 +164,21 @@ app.controller('customersCtrl', function($scope, $http) {
                             content +='<tr>';
                             content += '<td>Order Number</td>';
                             content += '<td>Take out/Table #</td>';
-                            content += '<td>In Progress?</td>';
+                            content += '<td>Actions</td>';
                             content += '<td>Item List</td>';
                             content +='</tr>';
                             snapshot.forEach(function(data){
                                              var val = data.val();
                                              content +='<tr>';
                                              content += '<td>' + val.order_number + '</td>';
-                                             window.console&&console.log(val.order_number);
-                                             content += '<td>' + val.table_number_or_take_out + '</td>';
-                                             content += '<td>' + val.in_progress + '</td>';
+                                            content += '<td>' + val.table_number_or_take_out + '</td>';
+                                            var status_drop_down='<div class="dropdown"><button onclick="myFunction()" class="dropbtn">Choose Action</button><div id="myDropdown" class="dropdown-content"><a href="#">Start</a><a href="#">Finish</a><a href="#">Cancel</a></div></div>';
+                                             content += '<td>' + status_drop_down + '</td>';
                                              var item_table = '';
                                              item_table += '<table>';
                                              val.item_list.forEach(function(data2){
                                                  item_table +='<tr>';
                                                  item_table += '<td>' + data2.item_name + '</td>';
-                                                 window.console&&console.log(data2.item_name);
                                                  item_table += '<td>' + data2.item_amount + '</td>';
                                                  item_table += '<td>' + data2.notes + '</td>';
                                                                    var preferences = '';
