@@ -172,7 +172,7 @@ app.controller('customersCtrl', function($scope, $http) {
                                              content +='<tr>';
                                              content += '<td>' + val.order_number + '</td>';
                                             content += '<td>' + val.table_number_or_take_out + '</td>';
-                                            var status_drop_down='<div class="dropdown"><button onclick="myFunction()" class="dropbtn">Choose Action</button><div id="myDropdown" class="dropdown-content"><a href="#">Start</a><a href="#">Finish</a><a href="#">Cancel</a></div></div>';
+                                            var status_drop_down='<div class="dropdown"><button onclick="myFunction()" class="dropbtn">Choose Action</button> <div id="myDropdown" class="dropdown-content"><a onclick="startProgress('+val.order_number+')">Start</a><a onclick="finishProgress('+val.order_number+')">Finish</a><a onclick="cancelOrder('+val.order_number+')">Cancel</a></div></div>';
                                              content += '<td>' + status_drop_down + '</td>';
                                              var item_table = '';
                                              item_table += '<table>';
@@ -211,6 +211,16 @@ app.controller('customersCtrl', function($scope, $http) {
                                             $('#customers tbody').html(content);
                             }
                 });
+                function startProgress(order_number) {
+<!--                    database.ref('restaurants/0/orders/'+)-->
+                    alert("start progress: "+order_number);
+                }
+                function finishProgress(order_number) {
+                    alert("finish progress: "+order_number);
+                }
+                function cancelOrder(order_number) {
+                    alert("cancel order: "+order_number);
+                }
     </script>
 </body>
 </html>
