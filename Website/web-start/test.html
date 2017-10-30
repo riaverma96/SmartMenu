@@ -20,7 +20,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Learn how to use the Firebase platform on the Web">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friendly Chat</title>
+  <title>Smart Menu - Current Orders</title>
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -66,7 +66,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #ddddff;
 }
 </style>
 
@@ -78,7 +78,7 @@ tr:nth-child(even) {
   <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
       <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-        <h3><i class="material-icons">chat_bubble_outline</i> Test Chat</h3>
+        <h3>Current Orders</h3>
       </div>
       <div id="user-container">
         <div hidden id="user-pic"></div>
@@ -101,32 +101,8 @@ tr:nth-child(even) {
           <tr>
             <th>Order#</th>
             <th>Table#/Take Out</th>
+            <th>In Progress</th>
             <th>Item List</th>
-            <th>Status</th>
-          </tr>
-          <tr>
-            <td class="tg-baqh">1</td>
-            <td class="tg-baqh">1</td>
-            <td class="tg-baqh">Caser Salad</td>
-            <td class="tg-baqh">1</td>
-          </tr>
-          <tr>
-            <td class="tg-baqh">2</td>
-            <td class="tg-baqh">2</td>
-            <td class="tg-baqh">Ramen</td>
-            <td class="tg-baqh">2</td>
-          </tr>
-          <tr>
-            <td class="tg-baqh">3</td>
-            <td class="tg-baqh">Take Out</td>
-            <td class="tg-baqh">Ramen</td>
-            <td class="tg-baqh">1</td>
-          </tr>
-          <tr>
-            <td class="tg-baqh">4</td>
-            <td class="tg-baqh">1</td>
-            <td class="tg-baqh">Hambuger</td>
-            <td class="tg-baqh">3</td>
           </tr>
       </tbody>
   </table>
@@ -164,19 +140,56 @@ app.controller('customersCtrl', function($scope, $http) {
     var database = firebase.database();
     database.ref('restaurants/0/orders').on('value', function(snapshot){
                         if(snapshot.exists()){
-                                            alert("snapshot exists!!");
-
                             var content = '';
+                            content +='<tr>';
+                            content += '<td>Order Number</td>';
+                            content += '<td>Take out/Table #</td>';
+                            content += '<td>In Progress?</td>';
+                            content += '<td>Item List</td>';
+                            content +='</tr>';
                             snapshot.forEach(function(data){
                                              var val = data.val();
                                              content +='<tr>';
                                              content += '<td>' + val.order_number + '</td>';
+                                             window.console&&console.log(val.order_number);
                                              content += '<td>' + val.table_number_or_take_out + '</td>';
-                                             content += '<td>' + val.item_list + '</td>';
                                              content += '<td>' + val.in_progress + '</td>';
+                                             var item_table = '';
+                                             item_table += '<table>';
+                                             val.item_list.forEach(function(data2){
+                                                 item_table +='<tr>';
+                                                 item_table += '<td>' + data2.item_name + '</td>';
+                                                 window.console&&console.log(data2.item_name);
+                                                 item_table += '<td>' + data2.item_amount + '</td>';
+                                                 item_table += '<td>' + data2.notes + '</td>';
+                                                                   var preferences = '';
+                                                                   preferences +='<table>';
+                                                                   data2.preferences.forEach(function(data3){
+                                                                                          preferences+='<tr>';
+                                                                                             var type = '';
+                                                                                             var filler = '';
+                                                                                             if (data3.allergen!=null) {
+                                                                                             type='allergen'
+                                                                                             filler=data3.allergen;
+                                                                                             } else if (data3.spiciness!=null){
+                                                                                             type='spiciness'
+                                                                                             filler=data3.spiciness;
+                                                                                             } else if (data3.sweetness!=null){
+                                                                                             type='sweetness'
+                                                                                             filler=data3.sweetness;
+                                                                                             }
+                                                                                             preferences += '<td>'+type+': ' + filler + '</td>';
+                                                                                             preferences+='</tr>';
+                                                                                             });
+                                                                   preferences +='</table>';
+                                                                   item_table += '<td>' + preferences + '</td>';
+                                                 item_table += '</tr>';
+                                           });
+                                             item_table += '</table>';
+                                             content += '<td>' + item_table + '</td>';
                                              content += '</tr>';
                                              });
-                                            $('#customers > tbody:last-child').append(content);
+                                            $('#customers tbody').html(content);
                             }
                 });
     </script>
