@@ -130,24 +130,23 @@ app.controller('customersCtrl', function($scope, $http) {
     /* When the user clicks on the button,
      toggle between hiding and showing the dropdown content */
     function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
     // Close the dropdown menu if the user clicks outside of it
     window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
+            if (!event.target.matches('.dropbtn')) {
+        
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                         openDropdown.classList.remove('show');
+                    }
+             }
         }
-    }
-    // Initialize Firebase
+ }    // Initialize Firebase
     var config = {
         apiKey: "AIzaSyDlF12TmJb7U17Crr4cskYm0vTLmCpFKBE",
         authDomain: "smart-menu-94ff4.firebaseapp.com",
@@ -162,7 +161,6 @@ app.controller('customersCtrl', function($scope, $http) {
                         if(snapshot.exists()){
                             var content = '';
                             content +='<tr>';
-                            content += '<td>Order Number</td>';
                             content += '<td>Take out/Table #</td>';
                             content += '<td>Actions</td>';
                             content += '<td>Item List</td>';
@@ -170,9 +168,8 @@ app.controller('customersCtrl', function($scope, $http) {
                             snapshot.forEach(function(data){
                                              var val = data.val();
                                              content +='<tr>';
-                                             content += '<td>' + val.order_number + '</td>';
                                             content += '<td>' + val.table_number_or_take_out + '</td>';
-                                            var status_drop_down='<div class="dropdown"><button onclick="myFunction()" class="dropbtn">Choose Action</button> <div id="myDropdown" class="dropdown-content"><a onclick="startProgress('+val.order_number+')">Start</a><a onclick="finishProgress('+val.order_number+')">Finish</a><a onclick="cancelOrder('+val.order_number+')">Cancel</a></div></div>';
+                                            var status_drop_down='<div class="dropdown"><button onclick="myFunction()" class="dropbtn">Choose Action</button> <div id="myDropdown" class="dropdown-content"><a onclick="startProgress('+val.uuid+')">Start</a><a onclick="finishProgress('+val.uuid+')">Finish</a><a onclick="cancelOrder('+val.uuid+')">Cancel</a></div></div>';
                                              content += '<td>' + status_drop_down + '</td>';
                                              var item_table = '';
                                              item_table += '<table>';
@@ -201,6 +198,7 @@ app.controller('customersCtrl', function($scope, $http) {
                                                                                              preferences+='</tr>';
                                                                                              });
                                                                    preferences +='</table>';
+                                                                   window.console&&console.log(preferences);
                                                                    item_table += '<td>' + preferences + '</td>';
                                                  item_table += '</tr>';
                                            });
@@ -211,9 +209,10 @@ app.controller('customersCtrl', function($scope, $http) {
                                             $('#customers tbody').html(content);
                             }
                 });
-                function startProgress(order_number) {
-<!--                    database.ref('restaurants/0/orders/'+)-->
-                    alert("start progress: "+order_number);
+                function startProgress(uuid) {
+                    alert('restaurants/0/orders/'+uuid+'/in_progress');
+                    database.ref('restaurants/0/orders/'+uuid+'/in_progress').set("true");
+                    alert("start progress: on order "+uuid);
                 }
                 function finishProgress(order_number) {
                     alert("finish progress: "+order_number);
