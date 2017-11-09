@@ -17,7 +17,7 @@
 		20CDC0881F954D6E001FEC9C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC0871F954D6E001FEC9C /* Meal.swift */; };
 		59107DBE98D7C8F06840C760 /* Pods_SmartMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A3E785C2B9F49A5E7524CE /* Pods_SmartMenu.framework */; };
 		735096E11FB3C5540014623C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735096E01FB3C5540014623C /* SignInViewController.swift */; };
-		7397AA2A1FA6EBD600D671CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7397AA291FA6EBD600D671CE /* GoogleService-Info.plist */; };
+		735096E31FB40DAD0014623C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 735096E21FB40DAC0014623C /* GoogleService-Info.plist */; };
 		73DC56F81FA0185B00BB5891 /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC56F71FA0185B00BB5891 /* paymentViewController.swift */; };
 		73DC56FA1FA01AC100BB5891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC56F91FA01AC100BB5891 /* AppDelegate.swift */; };
 		73DC56FC1FA01B0A00BB5891 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC56FB1FA01B0900BB5891 /* BrowseViewController.swift */; };
@@ -68,7 +68,7 @@
 		20CDC0871F954D6E001FEC9C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		40A3E785C2B9F49A5E7524CE /* Pods_SmartMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		735096E01FB3C5540014623C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		7397AA291FA6EBD600D671CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		735096E21FB40DAC0014623C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		73DC56F71FA0185B00BB5891 /* paymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
 		73DC56F91FA01AC100BB5891 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DC56FB1FA01B0900BB5891 /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
@@ -199,8 +199,8 @@
 				20CDC0851F954610001FEC9C /* MenuTableViewController.swift */,
 				FBEA46B11F7F270900049BA2 /* Assets.xcassets */,
 				FBEA46B31F7F270900049BA2 /* LaunchScreen.storyboard */,
-				7397AA291FA6EBD600D671CE /* GoogleService-Info.plist */,
 				FBEA46B61F7F270900049BA2 /* Info.plist */,
+				735096E21FB40DAC0014623C /* GoogleService-Info.plist */,
 				FB63F7211F9403130016945A /* MapViewController.swift */,
 				FBCEF99A1F943F7500AE0DBD /* RestaurantPin.swift */,
 				FB0310A91F9E8A2B002A3E9B /* RestaurantPinView.swift */,
@@ -343,7 +343,7 @@
 				FBEA46B51F7F270900049BA2 /* LaunchScreen.storyboard in Resources */,
 				FBEA46B21F7F270900049BA2 /* Assets.xcassets in Resources */,
 				FBEA46B01F7F270900049BA2 /* Main.storyboard in Resources */,
-				7397AA2A1FA6EBD600D671CE /* GoogleService-Info.plist in Resources */,
+				735096E31FB40DAD0014623C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
