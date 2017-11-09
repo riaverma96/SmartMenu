@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title="smart menu restaurant ui">
+</head>
+
+
+  <body>
+    <h1 id="FirstOne"></h1>
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDlF12TmJb7U17Crr4cskYm0vTLmCpFKBE",
+        authDomain: "smart-menu-94ff4.firebaseapp.com",
+        databaseURL: "https://smart-menu-94ff4.firebaseio.com",
+        projectId: "smart-menu-94ff4",
+        storageBucket: "smart-menu-94ff4.appspot.com",
+        messagingSenderId: "357649457207"
+      };
+      firebase.initializeApp(config);
+
+      var FirstOne = document.getElementById('FirstOne');
+      var dbRef = firebase.database().ref().child('text');
+      dbRef.on('value',snap => FireOne.innerText = snap.val());
+
+    </script>
+  </body>
+</html>

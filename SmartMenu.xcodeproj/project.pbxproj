@@ -16,6 +16,8 @@
 		20CDC0861F954610001FEC9C /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC0851F954610001FEC9C /* MenuTableViewController.swift */; };
 		20CDC0881F954D6E001FEC9C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC0871F954D6E001FEC9C /* Meal.swift */; };
 		59107DBE98D7C8F06840C760 /* Pods_SmartMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A3E785C2B9F49A5E7524CE /* Pods_SmartMenu.framework */; };
+		735096E11FB3C5540014623C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735096E01FB3C5540014623C /* SignInViewController.swift */; };
+		7397AA2A1FA6EBD600D671CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7397AA291FA6EBD600D671CE /* GoogleService-Info.plist */; };
 		73DC56F81FA0185B00BB5891 /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC56F71FA0185B00BB5891 /* paymentViewController.swift */; };
 		73DC56FA1FA01AC100BB5891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC56F91FA01AC100BB5891 /* AppDelegate.swift */; };
 		73DC56FC1FA01B0A00BB5891 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC56FB1FA01B0900BB5891 /* BrowseViewController.swift */; };
@@ -23,6 +25,8 @@
 		73DC57021FA01B4100BB5891 /* MockCustomerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC56FE1FA01B4100BB5891 /* MockCustomerContext.swift */; };
 		73DC57031FA01B4100BB5891 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC56FF1FA01B4100BB5891 /* MockAPIClient.swift */; };
 		73DC57041FA01B4100BB5891 /* CardFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC57001FA01B4100BB5891 /* CardFieldViewController.swift */; };
+		7E037F4C1FA6A00B00783816 /* ViewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E037F4B1FA6A00B00783816 /* ViewOrderViewController.swift */; };
+		7E037F4E1FA6A4E700783816 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E037F4D1FA6A4E700783816 /* OrderTableViewCell.swift */; };
 		7E31492E1F9FDCCD009329CB /* MenuDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31492D1F9FDCCD009329CB /* MenuDetailViewController.swift */; };
 		FB0310AA1F9E8A2B002A3E9B /* RestaurantPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0310A91F9E8A2B002A3E9B /* RestaurantPinView.swift */; };
 		FB63F7221F9403130016945A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63F7211F9403130016945A /* MapViewController.swift */; };
@@ -63,6 +67,8 @@
 		20CDC0851F954610001FEC9C /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		20CDC0871F954D6E001FEC9C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		40A3E785C2B9F49A5E7524CE /* Pods_SmartMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		735096E01FB3C5540014623C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		7397AA291FA6EBD600D671CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		73DC56F71FA0185B00BB5891 /* paymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
 		73DC56F91FA01AC100BB5891 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DC56FB1FA01B0900BB5891 /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +76,8 @@
 		73DC56FE1FA01B4100BB5891 /* MockCustomerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCustomerContext.swift; sourceTree = "<group>"; };
 		73DC56FF1FA01B4100BB5891 /* MockAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
 		73DC57001FA01B4100BB5891 /* CardFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFieldViewController.swift; sourceTree = "<group>"; };
+		7E037F4B1FA6A00B00783816 /* ViewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOrderViewController.swift; sourceTree = "<group>"; };
+		7E037F4D1FA6A4E700783816 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		7E31492D1F9FDCCD009329CB /* MenuDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailViewController.swift; sourceTree = "<group>"; };
 		84BAE18819286B1207B09570 /* libPods-SmartMenuUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartMenuUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8654EEDE55C8519F2D235C8C /* Pods-SmartMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMenu/Pods-SmartMenu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,12 +190,16 @@
 				FBEA46AC1F7F270900049BA2 /* ViewController.swift */,
 				20CDC0871F954D6E001FEC9C /* Meal.swift */,
 				FBEA46AE1F7F270900049BA2 /* Main.storyboard */,
+				735096E01FB3C5540014623C /* SignInViewController.swift */,
+				7E037F4B1FA6A00B00783816 /* ViewOrderViewController.swift */,
+				7E037F4D1FA6A4E700783816 /* OrderTableViewCell.swift */,
 				73DC56F91FA01AC100BB5891 /* AppDelegate.swift */,
 				20CDC0831F9545F2001FEC9C /* MenuTableViewCell.swift */,
 				7E31492D1F9FDCCD009329CB /* MenuDetailViewController.swift */,
 				20CDC0851F954610001FEC9C /* MenuTableViewController.swift */,
 				FBEA46B11F7F270900049BA2 /* Assets.xcassets */,
 				FBEA46B31F7F270900049BA2 /* LaunchScreen.storyboard */,
+				7397AA291FA6EBD600D671CE /* GoogleService-Info.plist */,
 				FBEA46B61F7F270900049BA2 /* Info.plist */,
 				FB63F7211F9403130016945A /* MapViewController.swift */,
 				FBCEF99A1F943F7500AE0DBD /* RestaurantPin.swift */,
@@ -331,6 +343,7 @@
 				FBEA46B51F7F270900049BA2 /* LaunchScreen.storyboard in Resources */,
 				FBEA46B21F7F270900049BA2 /* Assets.xcassets in Resources */,
 				FBEA46B01F7F270900049BA2 /* Main.storyboard in Resources */,
+				7397AA2A1FA6EBD600D671CE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,15 +394,19 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SmartMenu/Pods-SmartMenu-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +421,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SmartMenu/Pods-SmartMenu-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/Stripe/Stripe.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/Stripe/Stripe.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -428,7 +445,10 @@
 				73DC57011FA01B4100BB5891 /* ThemeViewController.swift in Sources */,
 				20CDC0861F954610001FEC9C /* MenuTableViewController.swift in Sources */,
 				FB63F7221F9403130016945A /* MapViewController.swift in Sources */,
+				7E037F4C1FA6A00B00783816 /* ViewOrderViewController.swift in Sources */,
 				73DC56F81FA0185B00BB5891 /* paymentViewController.swift in Sources */,
+				735096E11FB3C5540014623C /* SignInViewController.swift in Sources */,
+				7E037F4E1FA6A4E700783816 /* OrderTableViewCell.swift in Sources */,
 				204432801F97DC8600F2ED1F /* CategoryTableViewController.swift in Sources */,
 				20CDC0881F954D6E001FEC9C /* Meal.swift in Sources */,
 				73DC57041FA01B4100BB5891 /* CardFieldViewController.swift in Sources */,
@@ -607,7 +627,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M25BEB6T8G;
+				DEVELOPMENT_TEAM = 7UYFPW3L73;
 				INFOPLIST_FILE = SmartMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -626,7 +646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M25BEB6T8G;
+				DEVELOPMENT_TEAM = 7UYFPW3L73;
 				INFOPLIST_FILE = SmartMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

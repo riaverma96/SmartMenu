@@ -4,4 +4,6 @@ target 'SmartMenu' do
   pod 'Stripe'
   pod 'Alamofire'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 end

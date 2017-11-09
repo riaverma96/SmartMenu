@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class MenuDetailViewController: UIViewController {
     
     var detail = Meal(name:"Unknown",price:"Unknown",description:"")
+    var order = [Meal]()
     @IBOutlet weak var Spicy_type: UIView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var sweet_label: UILabel!
@@ -37,6 +39,18 @@ class MenuDetailViewController: UIViewController {
         label.sizeToFit()
     }
  
+    @IBAction func showAlert(_ sender: UIButton) {
+            // create the alert
+            let alert = UIAlertController(title: "Congratulations", message: "Your meal is added to basket successfully!", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+        order.append(detail!);
+    }
+    
     @IBAction func spicy_choice_action(_ sender: UISegmentedControl) {
         switch spicy_choice.selectedSegmentIndex
         {
@@ -65,6 +79,7 @@ class MenuDetailViewController: UIViewController {
             break;
         }
     }
+    
     @IBAction func allergic_one_action(_ sender: UISegmentedControl) {
         switch allergic_one.selectedSegmentIndex
         {
@@ -77,6 +92,13 @@ class MenuDetailViewController: UIViewController {
             break;
         }
     }
+    
+
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vo = segue.destination as! ViewOrderViewController;
+//        vo.order = order;
+//    }
+//    
     /*
     // MARK: - Navigation
 
