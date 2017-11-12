@@ -1,45 +1,45 @@
 //
-//  SignInViewController.swift
+//  signUpViewController.swift
 //  SmartMenu
 //
-//  Created by Xiaoyu Yang on 11/8/17.
+//  Created by Xiaoyu Yang on 11/11/17.
 //  Copyright © 2017 Hex. All rights reserved.
 //
 
 import UIKit
-import Firebase
 import FirebaseAuth
+import Firebase
 
-class SignInViewController: UIViewController {
-    @IBOutlet weak var signInTextField: UITextField!
+class SignUpViewController: UIViewController {
+    @IBOutlet weak var signUpTextField: UITextField!
     
-    @IBOutlet weak var passWordTextField: UITextField!
-    
+    @IBOutlet weak var signUpPassWord: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be  recreated.
+        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func signInFunction(_ sender: Any) {
-        if let email = signInTextField.text, let pass = passWordTextField.text
+    @IBAction func signUpFunction(_ sender: Any) {
+        if let email = signUpTextField.text, let pass = signUpPassWord.text
         {
-            Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, error) in
-                if let u = user{
-                    self.performSegue(withIdentifier: "Map", sender: self)
+            Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
+                if let u = user {
+                self.performSegue(withIdentifier: "SignIn", sender: self)
                 }
                 else {
                     //error
                 }
             })
         }
-        
     }
+    
     /*
     // MARK: - Navigation
 

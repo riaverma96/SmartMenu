@@ -75,7 +75,7 @@
         <!--Sign Up-->
         <scene sceneID="Zuf-VX-KT8">
             <objects>
-                <viewController id="8zu-mC-AjS" sceneMemberID="viewController">
+                <viewController id="8zu-mC-AjS" customClass="SignUpViewController" customModule="SmartMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VLa-4X-54B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,14 +95,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ou2-Io-iiH">
-                                <rect key="frame" x="35" y="418" width="138" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJ7-9s-td4">
-                                <rect key="frame" x="181" y="418" width="158" height="30"/>
+                                <rect key="frame" x="35" y="418" width="304" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -134,7 +127,7 @@
                                     <color key="titleColor" red="0.99057347870000001" green="0.99867016080000004" blue="0.96397641069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1fe-WY-JrL" kind="show" id="F52-bF-qUW"/>
+                                    <action selector="signUpFunction:" destination="8zu-mC-AjS" eventType="touchUpInside" id="SJs-za-LO8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWi-nW-EkR">
@@ -157,10 +150,15 @@
                         <viewLayoutGuide key="safeArea" id="rw3-qm-VHj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sign Up" id="JG5-sh-XLK"/>
+                    <connections>
+                        <outlet property="signUpPassWord" destination="Ou2-Io-iiH" id="ooE-4n-MIN"/>
+                        <outlet property="signUpTextField" destination="ZCx-q9-kOf" id="XSO-Gn-z8K"/>
+                        <segue destination="38O-sf-Lo0" kind="show" identifier="SignIn" id="Lw0-gg-cO9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUe-dz-rsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1863" y="262"/>
+            <point key="canvasLocation" x="1826" y="224"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="gxt-og-yp5">
@@ -879,11 +877,9 @@
         <image name="icon" width="430" height="468"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bAI-H9-bNi"/>
         <segue reference="kkT-Ln-qc6"/>
         <segue reference="y8Q-kd-sDM"/>
-        <segue reference="HbA-pF-j4T"/>
-        <segue reference="4aw-ym-mYs"/>
-        <segue reference="iRW-YW-1qp"/>
+        <segue reference="Lw0-gg-cO9"/>
+        <segue reference="b4j-Yt-bj7"/>
     </inferredMetricsTieBreakers>
 </document>
