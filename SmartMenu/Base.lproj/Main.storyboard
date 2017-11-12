@@ -28,9 +28,6 @@
                                         <state key="normal" title="Restaurant">
                                             <color key="titleColor" red="0.99867016077041626" green="0.32527303695678711" blue="0.078799895942211151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="o8d-1G-NsK" kind="show" id="vNX-bp-saq"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bz4-am-SyS">
                                         <rect key="frame" x="0.0" y="60" width="108" height="40"/>
@@ -73,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-151" y="298"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="Zuf-VX-KT8">
@@ -163,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUe-dz-rsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="496"/>
+            <point key="canvasLocation" x="1863" y="262"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="gxt-og-yp5">
@@ -196,7 +193,7 @@
                                     <color key="titleColor" red="0.99057347870000001" green="0.99867016080000004" blue="0.96397641069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1fe-WY-JrL" kind="show" id="r7u-oB-a1s"/>
+                                    <action selector="signInFunction:" destination="38O-sf-Lo0" eventType="touchUpInside" id="Svr-Yb-y8X"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not a member? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfQ-Hb-2bC">
@@ -244,11 +241,12 @@
                     <connections>
                         <outlet property="passWordTextField" destination="XHM-lv-gzw" id="2UJ-cN-o7v"/>
                         <outlet property="signInTextField" destination="7gC-cZ-hC0" id="yfM-GY-wJg"/>
+                        <segue destination="1fe-WY-JrL" kind="show" identifier="Map" id="HbA-pF-j4T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmE-Me-92q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="826" y="695"/>
+            <point key="canvasLocation" x="679" y="825"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="SKk-v6-hoX">
@@ -283,42 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVg-lO-gDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1417" y="1312"/>
-        </scene>
-        <!--Sign In-->
-        <scene sceneID="A8S-2q-uWG">
-            <objects>
-                <viewController id="o8d-1G-NsK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="74o-Ro-3tK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scm-tI-0eN">
-                                <rect key="frame" x="49" y="67" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt; Home"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Vai-vQ-Xxa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g86-MZ-qpL">
-                                <rect key="frame" x="74" y="469" width="226" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99867016080000004" green="0.32527303699999999" blue="0.078799895940000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" red="0.99057347870000001" green="0.99867016080000004" blue="0.96397641069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="8dZ-Td-Ip5"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Sign In" id="TAG-fj-d1m"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xdR-LD-Vu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1279" y="-313"/>
+            <point key="canvasLocation" x="1862" y="1308"/>
         </scene>
         <!--Category Table View Controller-->
         <scene sceneID="ufT-Fh-EW1">
@@ -917,9 +880,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bAI-H9-bNi"/>
-        <segue reference="Yxm-Db-fPr"/>
+        <segue reference="kkT-Ln-qc6"/>
         <segue reference="y8Q-kd-sDM"/>
-        <segue reference="r7u-oB-a1s"/>
+        <segue reference="HbA-pF-j4T"/>
         <segue reference="4aw-ym-mYs"/>
         <segue reference="iRW-YW-1qp"/>
     </inferredMetricsTieBreakers>
