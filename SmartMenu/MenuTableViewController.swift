@@ -136,6 +136,7 @@ class MenuTableViewController: UITableViewController {
         return cell
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if let navigationController = segue.destination as? UINavigationController {
             let childViewController = navigationController.topViewController as? MenuDetailViewController
@@ -146,6 +147,8 @@ class MenuTableViewController: UITableViewController {
         childViewController?.detail = subcatogary
         }
     }
+    
+    
     
     /*
      // Override to support conditional editing of the table view.

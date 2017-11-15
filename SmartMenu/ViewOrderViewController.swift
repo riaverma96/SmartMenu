@@ -12,6 +12,7 @@ import Firebase
 
 class ViewOrderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var order:[String] = []
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -79,15 +80,15 @@ class ViewOrderViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     
-    let orderData = ["Chef Salad             1"]
+    //let orderData = ["Chef Salad             1"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return orderData.count
+        return order.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "orderCell")
-        cell?.textLabel?.text = orderData[indexPath.row]
+        cell?.textLabel?.text = order[indexPath.row]
         return cell!
     }
     

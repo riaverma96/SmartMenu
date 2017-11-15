@@ -93,6 +93,14 @@ class MenuDetailViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vo = segue.destination as! ViewOrderViewController;
+        var ordername:[String] = []
+        for meal in order{
+            ordername.append(meal.name)
+        }
+        vo.order = ordername;
+    }
 
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        let vo = segue.destination as! ViewOrderViewController;
