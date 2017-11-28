@@ -1,0 +1,309 @@
+
+<!doctype html>
+<!--
+  Copyright 2015 Google Inc. All rights reserved.
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      https://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Learn how to use the Firebase platform on the Web">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Menu - Current Orders</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Friendly Chat">
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Friendly Chat">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-navbutton-color" content="#303F9F">
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  <!-- App Styling -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #ddddff;
+}
+</style>
+
+</head>
+<body>
+<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+  <!-- Header section containing logo -->
+  <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+      <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+        <h3>Current Orders</h3>
+      </div>
+      <div id="user-container">
+        <div hidden id="user-pic"></div>
+        <div hidden id="user-name"></div>
+        <button hidden id="sign-out" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+          Sign-out
+        </button>
+        <button hidden id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+          <i class="material-icons">account_circle</i>Sign-in with Google
+        </button>
+        <a href="history.html"><button id="back" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">Order History</button></a>
+        <button id="myaccount" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">My Account</button>
+      </div>
+    </div>
+  </header>
+
+  <!--table goes here-->
+  <table id = "customers">
+      <tbody>
+          <tr>
+            <th>Order#</th>
+            <th>Table#/Take Out</th>
+            <th>In Progress</th>
+            <th>Item List</th>
+          </tr>
+      </tbody>
+  </table>
+
+</div>
+
+<!-- Import and configure the Firebase SDK -->
+<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+<!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+<script src="/__/firebase/4.1.3/firebase.js"></script>
+<script src="/__/firebase/init.js"></script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+    $http.get("customers.php")
+    .then(function (response) {$scope.names = response.data.records;});
+});
+</script>
+
+<script src="scripts/main.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script>
+    /* When the user clicks on the button,
+     toggle between hiding and showing the dropdown content */
+//document.getElementById("myDropdown").classList.toggle("show");
+//$(document).ready(function(){
+ //                 $('.dropbtn').click(function(){
+   //                                   alert("clicks");
+     //                                 $(this).html($(this).html() == 'Choose Action' ? 'modify' : 'Choose Action');
+       //                               });
+         //         });
+
+    // Close the dropdown menu if the user clicks outside of it
+//    window.onclick = function(event) {
+  //          if (!event.target.matches('.dropbtn')) {
+   //
+    //                var dropdowns = document.getElementsByClassName("dropdown-content");
+     //               var i;
+      //              for (i = 0; i < dropdowns.length; i++) {
+        //            var openDropdown = dropdowns[i];
+          //          if (openDropdown.classList.contains('show')) {
+            //             openDropdown.classList.remove('show');
+              //      }
+            // }
+       // }
+ //}
+// Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDlF12TmJb7U17Crr4cskYm0vTLmCpFKBE",
+        authDomain: "smart-menu-94ff4.firebaseapp.com",
+        databaseURL: "https://smart-menu-94ff4.firebaseio.com",
+        projectId: "smart-menu-94ff4",
+        storageBucket: "smart-menu-94ff4.appspot.com",
+        messagingSenderId: "357649457207"
+    };
+    firebase.initializeApp(config);
+    var database = firebase.database();
+    database.ref('restaurants/0/orders').on('value', function(snapshot){
+                        if(snapshot.exists()){
+                            var content = '';
+                            content +='<tr>';
+                            content += '<td>Take out/Table #</td>';
+                            content += '<td>Actions</td>';
+                            content += '<td>Item List</td>';
+                            content += '<td>In Progress?</td>';
+                            content +='</tr>';
+                            snapshot.forEach(function(data){
+                                             var val = data.val();
+                                             var is_finished = val.finished;
+                                                 if (is_finished != "true"){
+                                                 content +='<tr>';
+                                                 content += '<td>' + val.table_number_or_take_out + '</td>';
+                                                 key = val.key
+                                                //var status_drop_down='<button class="dropbtn">Choose Action</button>' +
+                                                // ' <div id="myDropdown" class="dropdown-content"><a onclick="startProgress(\'' +key + '\')">Start</a><a onclick="finishProgress()">Finish</a><a onclick="cancelOrder()">Cancel</a></div>';
+                                             
+                                                 var status_drop_down=
+                                                 '<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">'+
+                                                 '<li><a onclick="startProgress(\'' +key + '\')">Start</a></li>'+
+                                                 '<li><a onclick="finishProgress(\'' +key + '\')">Finish</a></li>'+
+                                                 '<li><a onclick="cancelOrder(\'' +key + '\')">Cancel</a></li>'+
+                                                 '</ul>';
+                                             
+                                             
+                                             
+                                                 content += '<td>' + status_drop_down + '</td>';
+                                                 var item_table = '';
+                                                 item_table += '<table>';
+                                                 val.item_list.forEach(function(data2){
+                                                     item_table +='<tr>';
+                                                     item_table += '<td>' + data2.item_name + '</td>';
+                                                     item_table += '<td>' + data2.item_amount + '</td>';
+                                                     item_table += '<td>' + data2.notes + '</td>';
+                                                                       var preferences = '';
+                                                                       preferences +='<table>';
+                                                                       data2.preferences.forEach(function(data3){
+                                                                                              preferences+='<tr>';
+                                                                                                 var type = '';
+                                                                                                 var filler = '';
+                                                                                                 if (data3.allergen!=null) {
+                                                                                                    type='allergen'
+                                                                                                    filler=data3.allergen;
+                                                                                                 } else if (data3.spiciness!=null){
+                                                                                                    type='spiciness'
+                                                                                                    filler=data3.spiciness;
+                                                                                                 } else if (data3.sweetness!=null){
+                                                                                                    type='sweetness'
+                                                                                                    filler=data3.sweetness;
+                                                                                                 }
+                                                                                                 preferences += '<td>'+type+': ' + filler + '</td>';
+                                                                                                 preferences+='</tr>';
+                                                                                                 });
+                                                                       preferences +='</table>';
+                                                                       window.console&&console.log(preferences);
+                                                                       item_table += '<td>' + preferences + '</td>';
+                                                     item_table += '</tr>';
+                                               });
+                                                item_table += '</table>';
+                                                content += '<td>' + item_table + '</td>';
+                                                isProgress = val.in_progress;
+                                                if (isProgress==null){
+                                                    isProgress = false;
+                                                }
+                                                content += '<td>' + isProgress + '</td>';
+                                             
+                                             }
+                                             content += '</tr>';
+                                             });
+                                            $('#customers tbody').html(content);
+                            }
+                });
+                function startProgress(key) {
+                    var started = false;
+                    var set = 0;
+                    database.ref('restaurants/0/orders/'+key).on('value', function(snapshot){
+                        if(snapshot.exists()){
+                            snapshot.forEach(function(data){
+                                started = data.val();
+                                window.console&&console.log(started);
+                                if (started == "true") {
+                                    set = 1;
+                                }
+                            })
+                        }
+                    })
+                    if (set == 0) {
+                        database.ref('restaurants/0/orders/'+key+'/in_progress').set("true");
+                        alert("started progress!");
+                    } else {
+                        alert("This Order has been started already!");
+
+                    }
+                }
+                function finishProgress(key) {
+                    var started = false;
+                    database.ref('restaurants/0/orders/'+key).on('value', function(snapshot){
+                        if(snapshot.exists()){
+                            try {
+                                snapshot.forEach(function(data){
+                                    started = data.val();
+                                    
+                                        if (started == "true"|started=="false") {throw BreakException; }
+                                })
+                            } catch(e) {
+                                if (e !== BreakException) {throw e;}
+                            }
+                        }
+                    })
+                    if (started == "true") {
+                        database.ref('restaurants/0/orders/'+key+'/in_progress').set("false");
+                        database.ref('restaurants/0/orders/'+key+'/finished').set("true");
+                        alert("Finished order!");
+                    } else {
+                        alert("This Order has not been started yet!");
+                    }
+                    
+                }
+                function cancelOrder(key) {
+                    var started = false;
+                    var set = 0;
+                    database.ref('restaurants/0/orders/'+key).on('value', function(snapshot){
+                                                                 if(snapshot.exists()){
+                                                                 snapshot.forEach(function(data){
+                                                                                  started = data.val();
+                                                                                  window.console&&console.log(started);
+                                                                                  if (started == "true") {
+                                                                                  set = 1;
+                                                                                  }
+                                                                                  })
+                                                                 }
+                                                                 })
+                                                                 if (set == 0) {
+                                                                     database.ref('restaurants/0/orders/'+key).remove();
+                                                                     alert("Cancelled order!");
+                                                                 } else {
+                                                                     alert("Sorry, but this Order has been started already!");
+                                                                     
+                                                                 }
+                }
+    </script>
+</body>
+</html>
