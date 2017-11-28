@@ -577,7 +577,8 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vbP-s3-BWL">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="sQw-8K-BRS">
+                        <barButtonItem key="leftBarButtonItem" title="Order More" id="sQw-8K-BRS">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="ebc-nV-KbK" kind="show" id="6x9-6I-tpt"/>
                             </connections>
@@ -849,6 +850,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
