@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>357649457207-ov9hptcgtn4i2kmjvup17tb4qlnrovun.apps.googleusercontent.com</string>
+	<string>749549323803-e73qp368s7uq3h3oqeefjl7s3ek8fqh2.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.357649457207-ov9hptcgtn4i2kmjvup17tb4qlnrovun</string>
+	<string>com.googleusercontent.apps.749549323803-e73qp368s7uq3h3oqeefjl7s3ek8fqh2</string>
 	<key>API_KEY</key>
-	<string>AIzaSyARAuikQQXEuaRq4PK8PiJymWuK5BuZY-c</string>
+	<string>AIzaSyAhMUr-srUR3wdpWkPi6L03t9GxoWTktis</string>
 	<key>GCM_SENDER_ID</key>
-	<string>357649457207</string>
+	<string>749549323803</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>alpha.SmartMenu</string>
+	<string>HEX.SmartMenu</string>
 	<key>PROJECT_ID</key>
-	<string>smart-menu-94ff4</string>
+	<string>hex-smart-menu</string>
 	<key>STORAGE_BUCKET</key>
-	<string>smart-menu-94ff4.appspot.com</string>
+	<string>hex-smart-menu.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:357649457207:ios:d8e15877a81523d9</string>
+	<string>1:749549323803:ios:d7bfc8dd1a17e594</string>
 	<key>DATABASE_URL</key>
-	<string>https://smart-menu-94ff4.firebaseio.com</string>
+	<string>https://hex-smart-menu.firebaseio.com</string>
 </dict>
 </plist>

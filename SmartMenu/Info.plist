@@ -22,6 +22,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Needs access to location at all times</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Needs access to location </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Needs access to location when in usage</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -30,12 +36,6 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Needs access to location when in usage</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Needs access to location </string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Needs access to location at all times</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
