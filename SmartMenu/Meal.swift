@@ -9,14 +9,16 @@
 import Foundation
 
 class Meal{
+    var category:String
     var name:String
     var price:String
     var description:String
     var preference : [String:String]
-    init?(name: String, price:String, description:String,preference:[String:String]=[String:String]()) {
+    init?(category: String,name: String, price:String, description:String,preference:[String:String]=[String:String]()) {
         if name.isEmpty || price.isEmpty {
             return nil
         }
+        self.category = category
         self.name = name
         self.price = price
         self.description = description

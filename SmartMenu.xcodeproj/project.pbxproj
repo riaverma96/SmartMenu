@@ -17,7 +17,6 @@
 		20CDC0881F954D6E001FEC9C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC0871F954D6E001FEC9C /* Meal.swift */; };
 		59107DBE98D7C8F06840C760 /* Pods_SmartMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A3E785C2B9F49A5E7524CE /* Pods_SmartMenu.framework */; };
 		735096E11FB3C5540014623C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735096E01FB3C5540014623C /* SignInViewController.swift */; };
-		735096E31FB40DAD0014623C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 735096E21FB40DAC0014623C /* GoogleService-Info.plist */; };
 		738E1AC11FB7F5DE00697E8A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738E1AC01FB7F5DE00697E8A /* SignUpViewController.swift */; };
 		73DC56F81FA0185B00BB5891 /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC56F71FA0185B00BB5891 /* paymentViewController.swift */; };
 		73DC56FA1FA01AC100BB5891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC56F91FA01AC100BB5891 /* AppDelegate.swift */; };
@@ -29,6 +28,7 @@
 		7E037F4C1FA6A00B00783816 /* ViewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E037F4B1FA6A00B00783816 /* ViewOrderViewController.swift */; };
 		7E037F4E1FA6A4E700783816 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E037F4D1FA6A4E700783816 /* OrderTableViewCell.swift */; };
 		7E31492E1F9FDCCD009329CB /* MenuDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31492D1F9FDCCD009329CB /* MenuDetailViewController.swift */; };
+		7E57E8821FCCE67200DEE0D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E57E8811FCCE67100DEE0D7 /* GoogleService-Info.plist */; };
 		FB0310AA1F9E8A2B002A3E9B /* RestaurantPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0310A91F9E8A2B002A3E9B /* RestaurantPinView.swift */; };
 		FB63F7221F9403130016945A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB63F7211F9403130016945A /* MapViewController.swift */; };
 		FBCEF99B1F943F7500AE0DBD /* RestaurantPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCEF99A1F943F7500AE0DBD /* RestaurantPin.swift */; };
@@ -69,7 +69,6 @@
 		20CDC0871F954D6E001FEC9C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		40A3E785C2B9F49A5E7524CE /* Pods_SmartMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		735096E01FB3C5540014623C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		735096E21FB40DAC0014623C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		738E1AC01FB7F5DE00697E8A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		73DC56F71FA0185B00BB5891 /* paymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
 		73DC56F91FA01AC100BB5891 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		7E037F4B1FA6A00B00783816 /* ViewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOrderViewController.swift; sourceTree = "<group>"; };
 		7E037F4D1FA6A4E700783816 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		7E31492D1F9FDCCD009329CB /* MenuDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailViewController.swift; sourceTree = "<group>"; };
+		7E57E8811FCCE67100DEE0D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84BAE18819286B1207B09570 /* libPods-SmartMenuUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartMenuUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8654EEDE55C8519F2D235C8C /* Pods-SmartMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMenu/Pods-SmartMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		AC4C5F9B01343BA75D136C47 /* Pods-SmartMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMenu/Pods-SmartMenu.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 				FBEA46B11F7F270900049BA2 /* Assets.xcassets */,
 				FBEA46B31F7F270900049BA2 /* LaunchScreen.storyboard */,
 				FBEA46B61F7F270900049BA2 /* Info.plist */,
-				735096E21FB40DAC0014623C /* GoogleService-Info.plist */,
+				7E57E8811FCCE67100DEE0D7 /* GoogleService-Info.plist */,
 				FB63F7211F9403130016945A /* MapViewController.swift */,
 				FBCEF99A1F943F7500AE0DBD /* RestaurantPin.swift */,
 				FB0310A91F9E8A2B002A3E9B /* RestaurantPinView.swift */,
@@ -346,7 +346,7 @@
 				FBEA46B51F7F270900049BA2 /* LaunchScreen.storyboard in Resources */,
 				FBEA46B21F7F270900049BA2 /* Assets.xcassets in Resources */,
 				FBEA46B01F7F270900049BA2 /* Main.storyboard in Resources */,
-				735096E31FB40DAD0014623C /* GoogleService-Info.plist in Resources */,
+				7E57E8821FCCE67200DEE0D7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

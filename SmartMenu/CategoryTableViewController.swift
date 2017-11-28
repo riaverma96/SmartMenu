@@ -31,7 +31,8 @@ class CategoryTableViewController: UITableViewController {
                     if let tm = json as? NSArray {
                         //var categoryList = [String]()
                         for obj in tm {
-                            //print("inside loop")
+                            print("inside loop")
+                            print(obj)
                             var temp_meal = [Meal]()
                             if let dict = obj as? NSDictionary {
                                 categoryList.append(dict["name"] as! String)
@@ -55,7 +56,7 @@ class CategoryTableViewController: UITableViewController {
                                         //print("name = ", myName)
                                         //print("price = ", myPrice ?? 1)
                                        //print("description = ", myDescription ?? "No description")
-                                        guard let meal = Meal(name: myName, price: myPrice!, description: myDescription as! String) else {return}
+                                        guard let meal = Meal(category: dict["name"] as! String,name: myName, price: myPrice!, description: myDescription as! String) else {return}
                                       //  if !(myDescription?.isEmpty)!{
                                            // meal.description = myDescription!
                                        //}

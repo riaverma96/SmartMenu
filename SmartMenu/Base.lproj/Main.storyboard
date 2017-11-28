@@ -230,6 +230,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdF-VC-YeV">
+                                <rect key="frame" x="170" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="1fe-WY-JrL" kind="show" id="h0q-4y-otN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -423,26 +431,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JHn-Ab-Qaz">
-                                                <rect key="frame" x="109" y="199" width="166" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <segments>
-                                                    <segment title="1"/>
-                                                    <segment title="2"/>
-                                                    <segment title="3"/>
-                                                </segments>
-                                                <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <connections>
-                                                    <action selector="spicy_choice_action:" destination="3s1-FS-E0J" eventType="valueChanged" id="47T-S6-Z1L"/>
-                                                </connections>
-                                            </segmentedControl>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LcH-7F-Pdp">
-                                                <rect key="frame" x="107" y="299" width="166" height="29"/>
+                                                <rect key="frame" x="89" y="264" width="260" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <segments>
-                                                    <segment title="1"/>
-                                                    <segment title="2"/>
-                                                    <segment title="3"/>
+                                                    <segment title="Less Sweet"/>
+                                                    <segment title="Regular"/>
+                                                    <segment title="More Sweet"/>
                                                 </segments>
                                                 <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
@@ -457,21 +452,21 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose level of sweetness:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMZ-oZ-43o">
-                                                <rect key="frame" x="52" y="270" width="208" height="21"/>
+                                                <rect key="frame" x="53" y="235" width="208" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you allergic to peanuts?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQt-ex-HcV">
-                                                <rect key="frame" x="52" y="378" width="223" height="21"/>
+                                                <rect key="frame" x="52" y="392" width="223" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xz3-Bd-Dbj">
-                                                <rect key="frame" x="66" y="509" width="249" height="22"/>
+                                                <rect key="frame" x="63" y="548" width="249" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Add to Basket">
@@ -489,7 +484,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TQx-3n-79a">
-                                                <rect key="frame" x="130" y="411" width="121" height="29"/>
+                                                <rect key="frame" x="140" y="421" width="121" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <segments>
                                                     <segment title="Yes"/>
@@ -498,6 +493,60 @@
                                                 <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="allergic_one_action:" destination="3s1-FS-E0J" eventType="valueChanged" id="UFn-pS-Yni"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose level of saltiness:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aY-YR-qam">
+                                                <rect key="frame" x="52" y="300" width="194" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you allergic to dairy?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPt-vT-b76">
+                                                <rect key="frame" x="52" y="457" width="223" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hTi-oh-V3L">
+                                                <rect key="frame" x="139" y="486" width="121" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="Yes"/>
+                                                    <segment title="No"/>
+                                                </segments>
+                                                <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="allergic_one_action:" destination="3s1-FS-E0J" eventType="valueChanged" id="X6a-Vq-Fay"/>
+                                                    <action selector="allergic_two_action:" destination="3s1-FS-E0J" eventType="valueChanged" id="2eM-Rb-GW9"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JHn-Ab-Qaz">
+                                                <rect key="frame" x="89" y="199" width="260" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="Less Spicy"/>
+                                                    <segment title="Regular"/>
+                                                    <segment title="More Spicy"/>
+                                                </segments>
+                                                <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="spicy_choice_action:" destination="3s1-FS-E0J" eventType="valueChanged" id="47T-S6-Z1L"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UYG-ee-ofe">
+                                                <rect key="frame" x="89" y="329" width="260" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="Less Sweet"/>
+                                                    <segment title="Regular"/>
+                                                    <segment title="More Sweet"/>
+                                                </segments>
+                                                <color key="tintColor" red="1" green="0.2810406272" blue="0.13373957880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="salty_choice_action:" destination="3s1-FS-E0J" eventType="valueChanged" id="Dbz-YR-34h"/>
+                                                    <action selector="sweet_choice_action:" destination="3s1-FS-E0J" eventType="valueChanged" id="LQH-tc-6Ju"/>
                                                 </connections>
                                             </segmentedControl>
                                         </subviews>
@@ -528,17 +577,9 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vbP-s3-BWL">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="5nK-HF-pKB">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="apb-Ru-cwI">
-                                <rect key="frame" x="16" y="7" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Order More">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="sQw-8K-BRS">
                             <connections>
-                                <segue destination="ebc-nV-KbK" kind="show" id="x5g-cW-mno"/>
+                                <segue destination="ebc-nV-KbK" kind="show" id="6x9-6I-tpt"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="bp2-4k-bd8">
@@ -550,7 +591,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="R5n-Je-K0W" kind="show" id="uQ5-IU-6DK"/>
+                                    <segue destination="R5n-Je-K0W" kind="show" identifier="toOrderView" id="uQ5-IU-6DK"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -560,8 +601,12 @@
                     <connections>
                         <outlet property="Spicy_type" destination="wNI-Ty-VCs" id="MTx-uu-j2T"/>
                         <outlet property="allergic_label_one" destination="XQt-ex-HcV" id="mHt-G0-aIr"/>
+                        <outlet property="allergic_label_two" destination="iPt-vT-b76" id="b6D-7q-BuY"/>
                         <outlet property="allergic_one" destination="TQx-3n-79a" id="7V2-rm-4Eb"/>
+                        <outlet property="allergic_two" destination="hTi-oh-V3L" id="e6m-aZ-FQ4"/>
                         <outlet property="label" destination="bkS-wk-K3R" id="wW6-NN-L4J"/>
+                        <outlet property="salty_choice" destination="UYG-ee-ofe" id="4AM-5Q-MEg"/>
+                        <outlet property="salty_label" destination="5aY-YR-qam" id="ytX-c2-tKO"/>
                         <outlet property="spicy_choice" destination="JHn-Ab-Qaz" id="hGS-Uh-0wj"/>
                         <outlet property="spicy_label" destination="Xgi-Jl-Jg7" id="aRz-LV-gco"/>
                         <outlet property="sweet_choice" destination="LcH-7F-Pdp" id="jGg-IZ-s9k"/>
@@ -570,7 +615,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtK-RX-aLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="2163"/>
+            <point key="canvasLocation" x="1269.5999999999999" y="2162.5187406296855"/>
         </scene>
         <!--Payment View Controller-->
         <scene sceneID="6VO-XP-ZQl">
@@ -778,7 +823,6 @@
         <!--Navigation Controller-->
         <scene sceneID="aQJ-Xe-llx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IV5-f3-8g2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0f3-eg-nxG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fEr-Ln-i76">
@@ -791,13 +835,13 @@
                         <segue destination="DTo-k7-6JL" kind="relationship" relationship="rootViewController" id="gqt-da-XGZ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IV5-f3-8g2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-290" y="3394"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fsh-kw-lW2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CBv-Ys-dwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nqp-eD-vAB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cb7-Wr-wee">
@@ -813,6 +857,7 @@
                         <segue destination="3s1-FS-E0J" kind="relationship" relationship="rootViewController" id="2vj-xH-FeF"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBv-Ys-dwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="316" y="2149"/>
         </scene>
@@ -980,8 +1025,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uQ5-IU-6DK"/>
-        <segue reference="x5g-cW-mno"/>
+        <segue reference="6x9-6I-tpt"/>
         <segue reference="JiP-Fw-yAz"/>
+        <segue reference="HbA-pF-j4T"/>
         <segue reference="dFp-Le-M3J"/>
         <segue reference="iRW-YW-1qp"/>
     </inferredMetricsTieBreakers>
